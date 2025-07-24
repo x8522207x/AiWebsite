@@ -1,0 +1,44 @@
+.button_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button>a {
+  margin-top: 100px;
+}
+
+.button:not(.ai_page)>a {
+  margin-top: 80px;
+}
+
+.button>a {
+  display: inline-block;
+  width: 800px;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.ai_page>a {
+  background-image: url(../img/ai_button.png);
+}
+
+.floor_page>a {
+  background-image: url(../img/floor_button.png);
+}
+
+.transportation_page>a {
+  background-image: url(../img/transportation_button.png);
+}
+
+.store_page>a {
+  background-image: url(../img/store_button.png);
+}
+
+.media_page>a {
+  background-image: url(../img/media_button.png);
+  margin-bottom: 80px;
+}

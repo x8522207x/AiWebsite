@@ -1,0 +1,292 @@
+.transportation_title {
+  background-image: url(../img/transportation/transportation_title.png);
+}
+
+.map {
+  background-image: url(../img/transportation/map.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 681px;
+  height: 446px;
+  margin-top: 29px;
+}
+
+.tab_list {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.tab_list>button:not(:first-of-type) {
+  margin-left: 30px;
+}
+
+.mapTab {
+  background-image: url(../img/transportation/map_tab.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 160px;
+}
+
+.mapTab.active {
+  background-image: url(../img/transportation/map_tab_active.png);
+}
+
+.longBusTab {
+  background-image: url(../img/transportation/long_bus_tab.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 268px;
+}
+
+.longBusTab.active {
+  background-image: url(../img/transportation/long_bus_tab_active.png);
+}
+
+.mrtTab {
+  background-image: url(../img/transportation/mrt_tab.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 160px;
+}
+
+.mrtTab.active {
+  background-image: url(../img/transportation/mrt_tab_active.png);
+}
+
+.shortBusTab {
+  background-image: url(../img/transportation/short_bus_tab.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 160px;
+}
+
+.shortBusTab.active {
+  background-image: url(../img/transportation/short_bus_tab_active.png);
+}
+
+.driveTab {
+  background-image: url(../img/transportation/drive_tab.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 160px;
+}
+
+.driveTab.active {
+  background-image: url(../img/transportation/drive_tab_active.png);
+}
+
+.content_body {
+  margin-top: 25px;
+  height: 750px;
+  width: 100%;
+}
+
+.content_body .display {
+  display: flex;
+}
+
+.content_body>div {
+  display: none;
+}
+
+.map_area {
+  background-image: url(../img/transportation/map_area.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 750px;
+  width: 1000px;
+  margin-left: 40px;
+  border: 3px #03182C;
+}
+
+.long_bus_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.long_bus_area .table_container {
+  max-height: 691px;
+  overflow-y: scroll;
+}
+
+.long_bus_area table {
+  width: 997px;
+  height: 691px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.long_bus_area table thead th {
+  position: sticky;
+  top: 0;
+  width: 499px;
+  height: 71px;
+  background-color: #03182C;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  position: sticky;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.long_bus_area table tbody td {
+  width: 499px;
+  height: 61px;
+  color: #000000;
+  vertical-align: middle;
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid #B7B7B7;
+}
+
+.long_bus_area .desc {
+  margin-top: 30px;
+  font-weight: Bold;
+  font-size: 22px;
+}
+
+.mrt_area {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.mrt_area .table-metro {
+  width: 997px;
+  height: 691px;
+  border-collapse: collapse;
+}
+
+.mrt_area .table-metro .table-purple {
+  height: 71px;
+  background-color: #800080;
+  color: #FFFFFF;
+}
+
+.mrt_area .table-metro .table-blue {
+  height: 56px;
+  background-color: #005B99;
+  color: #FFFFFF;
+}
+
+.mrt_area .table-metro .table-yellow {
+  height: 64px;
+  background-color: #FFC108;
+  color: #FFFFFF;
+}
+
+.mrt_area .table-metro .table-purple,
+.mrt_area .table-metro .table-blue,
+.mrt_area .table-metro .table-yellow {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.mrt_area .table-metro .table-purple th,
+.mrt_area .table-metro .table-blue th,
+.mrt_area .table-metro .table-yellow th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.mrt_area .table-metro tbody td,
+.mrt_area .table-metro tbody th {
+  border: 1px solid #B7B7B7;
+}
+
+.mrt_area .table-metro tbody tr td:first-of-type {
+  font-size: 24px;
+  font-weight: bold;
+  width: 232px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.mrt_area .table-metro tbody tr td:last-of-type {
+  padding-left: 14px;
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+.mrt_area .table-metro tbody tr td:last-of-type strong {
+  font-weight: bold;
+}
+
+.mrt_area .table-metro tbody tr td:last-of-type p {
+  line-height: 30px;
+}
+
+.short_bus_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.short_bus_area table {
+  width: 997px;
+  height: 691px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.short_bus_area table thead th {
+  height: 71px;
+  background-color: #03182C;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.short_bus_area table tbody td {
+  color: #000000;
+  vertical-align: middle;
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid #B7B7B7;
+}
+
+.drive_area .totalBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.drive_area .block {
+  display: flex;
+  margin-left: 50px;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.drive_area .direction {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.drive_area .path {
+  font-weight: 400;
+  font-size: 40px;
+  margin-left: 30px;
+  line-height: 64px;
+}
+
+.drive_area strong {
+  font-weight: bold;
+}
