@@ -156,9 +156,10 @@
 }
 
 .long_bus_area .desc {
-  margin-top: 30px;
-  font-weight: Bold;
+  margin-top: 20px;
+  font-weight: bold;
   font-size: 22px;
+  text-align: center;
 }
 
 .mrt_area {

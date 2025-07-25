@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>國家檔案館</title>
     <link rel="stylesheet" href="../css/page.css" />
     <link rel="stylesheet" href="../css/transportation.css" />
@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <script src="../js/transportation.js"></script>
+    <script src="../js/common.js"></script>
   </head>
   <body>
     <div class="logo_area">
@@ -35,8 +36,8 @@
             <table>
               <thead>
                 <tr>
-                  <th>林口轉運站發車</th>
-                  <th>檔案館發車</th>
+                  <th class="header1">林口轉運站發車</th>
+                  <th class="header2">檔案館發車</th>
                 </tr>
               </thead>
               <tbody>
@@ -110,16 +111,16 @@
                 <th colspan="2">桃園機場捷運</th>
               </tr>
               <tr>
-                <td style="height: 62px">長庚醫院站 A8</td>
-                <td>
+                <td class="a8" style="height: 62px">長庚醫院站 A8</td>
+                <td class="a8_1">
                   ➤
                   轉乘858路線公車，於<strong>林口國宅站（國家檔案館站）</strong>下車。
                 </td>
               </tr>
               <tr>
-                <td style="height: 160px">林口站 A9</td>
+                <td class="a9" style="height: 160px">林口站 A9</td>
                 <td>
-                  <p>
+                  <p class="a9_1">
                     ➤
                     轉乘898路線公車，於<strong>林口國宅站（國家檔案館站）</strong>下車。<br />
                     ➤
@@ -135,23 +136,23 @@
                 <th colspan="2">臺北捷運</th>
               </tr>
               <tr>
-                <td style="height: 62px">臺北車站</td>
-                <td>
+                <td class="a10" style="height: 62px">臺北車站</td>
+                <td class="a10_1">
                   ➤
                   轉乘966路線公車，於<strong>運動公園站</strong>下車，步行4分鐘。
                 </td>
               </tr>
               <tr>
-                <td style="height: 62px">淡水信義線</td>
-                <td>
+                <td class="a11" style="height: 62px">淡水信義線</td>
+                <td class="a11_1">
                   ➤
                   於<strong>圓山站</strong>轉乘936路線公車，於<strong>空間樂園社區站</strong>下車，步行5分鐘。
                 </td>
               </tr>
               <tr>
-                <td style="height: 102px">中和新蘆線</td>
+                <td class="a12" style="height: 102px">中和新蘆線</td>
                 <td>
-                  <p>
+                  <p class="a12_1">
                     ➤
                     於<strong>蘆洲站</strong>轉乘925路線公車，於<strong>運動公園站</strong>下車，步行4分鐘。<br />
                     ➤
@@ -163,8 +164,8 @@
                 <th colspan="2">環狀線</th>
               </tr>
               <tr>
-                <td style="height: 62px">幸福站 Y19</td>
-                <td>
+                <td class="y19" style="height: 62px">幸福站 Y19</td>
+                <td class="y19_1">
                   ➤
                   於<strong>幸福站Y19</strong>轉乘920路線公車，於<strong>空間樂園社區站</strong>下車，步行5分鐘。
                 </td>
@@ -176,45 +177,45 @@
           <table>
             <thead>
               <tr>
-                <th style="width: 232px">公車站名</th>
-                <th style="width: 232px">步行時間</th>
-                <th style="width: 531px">公車路線</th>
+                <th class="name" style="width: 232px">公車站名</th>
+                <th class="time" style="width: 232px">步行時間</th>
+                <th class="path" style="width: 531px">公車路線</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td style="height: 89px">林口國宅站<br />（國家檔案館站）</td>
-                <td>3分鐘</td>
-                <td>822、858、898、5063<br />跳蛙公車（林口府中經忠孝路）</td>
+                <td class="name_1" style="height: 89px">林口國宅站<br />（國家檔案館站）</td>
+                <td class="time_1">3分鐘</td>
+                <td class="path_1">822、858、898、5063<br />跳蛙公車（林口府中經忠孝路）</td>
               </tr>
               <tr>
-                <td style="height: 139px">運動公園站</td>
-                <td>4分鐘</td>
-                <td>
+                <td class="name_2" style="height: 139px">運動公園站</td>
+                <td class="time_2">4分鐘</td>
+                <td class="path_2">
                   822、858、898、925、948、966、967<br />F231、F237、F238<br />跳蛙公車（林口–捷運忠孝敦化）
                 </td>
               </tr>
               <tr>
-                <td style="height: 68px">世貿芳鄰站</td>
-                <td>5分鐘</td>
-                <td>786、920、936、945、967</td>
+                <td class="name_3" style="height: 68px">世貿芳鄰站</td>
+                <td class="time_3">5分鐘</td>
+                <td class="path_3">786、920、936、945、967</td>
               </tr>
               <tr>
-                <td style="height: 89px">運動公園 <br />（仁愛路）站</td>
-                <td>6分鐘</td>
-                <td>920、946、967、F237、F238</td>
+                <td class="name_4" style="height: 89px">運動公園 <br />（仁愛路）站</td>
+                <td class="time_4">6分鐘</td>
+                <td class="path_4">920、946、967、F237、F238</td>
               </tr>
               <tr>
-                <td style="height: 139px">台北新都站</td>
-                <td>7分鐘</td>
-                <td>
+                <td class="name_5" style="height: 139px">台北新都站</td>
+                <td class="time_5">7分鐘</td>
+                <td class="path_5">
                   786、920、946、967、5071、5069<br />F235、F239、F250<br />跳蛙公車（林口–捷運忠孝敦化）
                 </td>
               </tr>
               <tr>
-                <td style="height: 139px">夢想之都站</td>
-                <td>8分鐘</td>
-                <td>
+                <td class="name_6" style="height: 139px">夢想之都站</td>
+                <td class="time_6">8分鐘</td>
+                <td class="path_6">
                   854、920、937、946<br />跳蛙公車（林口–圓山）<br />跳蛙公車（林口文化三路–圓山）
                 </td>
               </tr>
