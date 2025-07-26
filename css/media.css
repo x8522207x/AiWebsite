@@ -1,3 +1,205 @@
 .media_title {
   background-image: url(../img/media/media_title.png);
 }
+
+.content>.media_cast_title {
+  background-image: url(../img/media/media_cast_title.png);
+  height: 184px;
+}
+
+.content>.submit_btn {
+  background-image: url(../img/media/submit_btn.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: 218px;
+  height: 100px;
+  margin-top: 40px;
+}
+
+.content>.submit_btn.disabled {
+  background-image: url(../img/media/submit_btn_disabled.png);
+}
+
+.robot {
+  background-image: url(../img/media/robot.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: 396px;
+  height: 606px;
+  position: absolute;
+  left: 45px;
+  top: 1054px;
+}
+
+.menu_list {
+  background-image: url(../img/media/menu_bg.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: 614px;
+  height: 848.5px;
+  position: absolute;
+  left: 416px;
+  top: 521px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.video_btn,
+.picture_btn,
+.cast_btn {
+  display: flex;
+  align-self: center;
+}
+
+.video_btn {
+  position: absolute;
+  left: 36px;
+  top: 108px;
+}
+
+.picture_btn {
+  position: absolute;
+  left: 36px;
+  top: 312px;
+}
+
+.cast_btn {
+  position: absolute;
+  left: 36px;
+  top: 516px;
+}
+
+.video_btn>a {
+  background-image: url(../img/media/video_btn.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: 540px;
+  height: 144px;
+}
+
+.picture_btn>a {
+  background-image: url(../img/media/picture_btn.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: 540px;
+  height: 144px;
+}
+
+.cast_btn>a {
+  background-image: url(../img/media/cast_btn.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: 540px;
+  height: 144px;
+}
+
+.rate_area {
+  height: 1176px;
+}
+
+.rate_area>div:first-of-type {
+  height: 216px;
+}
+
+.rate_area>div {
+  width: 1080px;
+  height: 240px;
+  border-bottom: 1px #D35344 solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rate_area>div>.title {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.rate_area .rate_ai_area .title {
+  background-image: url(../img/media/rate_ai_title.png);
+  width: 438.56px;
+  height: 69px;
+}
+
+.rate_area .rate_floor_area .title {
+  background-image: url(../img/media/rate_floor_title.png);
+  width: 475.56px;
+  height: 69px;
+}
+
+.rate_area .rate_transportation_area .title {
+  background-image: url(../img/media/rate_transportation_title.png);
+  width: 475.56px;
+  height: 69px;
+}
+
+.rate_area .rate_store_area .title {
+  background-image: url(../img/media/rate_store_title.png);
+  width: 575.56px;
+  height: 69px;
+}
+
+.rate_area .rate_media_area .title {
+  background-image: url(../img/media/rate_media_title.png);
+  width: 425.5556640625px;
+  height: 69px;
+}
+
+.rate_area>div>.grade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  margin-top: 10px;
+}
+
+.rate_area>div>.grade>div {
+  background-image: url(../img/media/star.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: 76px;
+  height: 73px;
+}
+
+.rate_area>div>.grade>div.active {
+  background-image: url(../img/media/star_active.png);
+}
+
+.mask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(217, 217, 217, 0.3);
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.mask.hidden {
+  display: none;
+}
+
+.dialog {
+  background-image: url(../img/media/dialog.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: 800px;
+  height: 300px;
+}
