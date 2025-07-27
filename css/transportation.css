@@ -1,3 +1,7 @@
+body.enBody .transportation_title {
+  background-image: url(../img/transportation/transportation_title_en.png);
+}
+
 .transportation_title {
   background-image: url(../img/transportation/transportation_title.png);
 }
@@ -12,6 +16,12 @@
   margin-top: 29px;
 }
 
+body.enBody .tab_list {
+  width: 887px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .tab_list {
   margin-top: 25px;
   display: flex;
@@ -20,6 +30,10 @@
 
 .tab_list>button:not(:first-of-type) {
   margin-left: 30px;
+}
+
+body.enBody .mapTab {
+  background-image: url(../img/transportation/map_tab_en.png);
 }
 
 .mapTab {
@@ -31,8 +45,17 @@
   width: 160px;
 }
 
+body.enBody .mapTab.active {
+  background-image: url(../img/transportation/map_tab_active_en.png);
+}
+
 .mapTab.active {
   background-image: url(../img/transportation/map_tab_active.png);
+}
+
+body.enBody .longBusTab {
+  background-image: url(../img/transportation/long_bus_tab_en.png);
+  width: 460px;
 }
 
 .longBusTab {
@@ -44,8 +67,16 @@
   width: 268px;
 }
 
+body.enBody .longBusTab.active {
+  background-image: url(../img/transportation/long_bus_tab_active_en.png);
+}
+
 .longBusTab.active {
   background-image: url(../img/transportation/long_bus_tab_active.png);
+}
+
+body.enBody .mrtTab {
+  background-image: url(../img/transportation/mrt_tab_en.png);
 }
 
 .mrtTab {
@@ -57,8 +88,16 @@
   width: 160px;
 }
 
+body.enBody .mrtTab.active {
+  background-image: url(../img/transportation/mrt_tab_active_en.png);
+}
+
 .mrtTab.active {
   background-image: url(../img/transportation/mrt_tab_active.png);
+}
+
+body.enBody .shortBusTab {
+  background-image: url(../img/transportation/short_bus_tab_en.png);
 }
 
 .shortBusTab {
@@ -70,8 +109,17 @@
   width: 160px;
 }
 
+body.enBody .shortBusTab.active {
+  background-image: url(../img/transportation/short_bus_tab_active_en.png);
+}
+
 .shortBusTab.active {
   background-image: url(../img/transportation/short_bus_tab_active.png);
+}
+
+body.enBody .driveTab {
+  background-image: url(../img/transportation/drive_tab_en.png);
+  width: 190px;
 }
 
 .driveTab {
@@ -83,8 +131,16 @@
   width: 160px;
 }
 
+body.enBody .driveTab.active {
+  background-image: url(../img/transportation/drive_tab_active_en.png);
+}
+
 .driveTab.active {
   background-image: url(../img/transportation/drive_tab_active.png);
+}
+
+body.enBody .content_body {
+  height: 660px;
 }
 
 .content_body {
@@ -99,6 +155,12 @@
 
 .content_body>div {
   display: none;
+}
+
+body.enBody .map_area {
+  height: 576px;
+  width: 768px;
+  margin-left: 156px;
 }
 
 .map_area {
@@ -119,6 +181,10 @@
   flex-direction: column;
 }
 
+body.enBody .long_bus_area .table_container {
+  max-height: 510px;
+}
+
 .long_bus_area .table_container {
   max-height: 691px;
   overflow-y: scroll;
@@ -137,12 +203,19 @@
   width: 499px;
   height: 71px;
   background-color: #03182C;
-  color: white;
   font-size: 30px;
   font-weight: bold;
   position: sticky;
   vertical-align: middle;
   text-align: center;
+}
+
+.long_bus_area table thead .header1 {
+  color: #FFFFFF;
+}
+
+.long_bus_area table thead .header2 {
+  color: #6CCAC8;
 }
 
 .long_bus_area table tbody td {
@@ -155,8 +228,14 @@
   border: 1px solid #B7B7B7;
 }
 
+body.enBody .long_bus_area .desc {
+  margin-top: 18px;
+  font-size: 24px;
+  width: 824px;
+}
+
 .long_bus_area .desc {
-  margin-top: 20px;
+  margin-top: 30px;
   font-weight: bold;
   font-size: 22px;
   text-align: center;
@@ -168,7 +247,14 @@
   align-self: center;
 }
 
-.mrt_area .table-metro {
+body.enBody .mrt_area .table_container {
+  width: 959px;
+  max-height: 570px;
+  border-collapse: collapse;
+  overflow-y: scroll;
+}
+
+.mrt_area .table_container {
   width: 997px;
   height: 691px;
   border-collapse: collapse;
@@ -178,6 +264,54 @@
   height: 71px;
   background-color: #800080;
   color: #FFFFFF;
+}
+
+body.enBody .mrt_area .table-metro .a8 {
+  height: 129px;
+}
+
+.mrt_area .table-metro .a8 {
+  height: 60px;
+}
+
+body.enBody .mrt_area .table-metro .a9 {
+  height: 279px;
+}
+
+.mrt_area .table-metro .a9 {
+  height: 158px;
+}
+
+body.enBody .mrt_area .table-metro .a10 {
+  height: 107px;
+}
+
+.mrt_area .table-metro .a10 {
+  height: 60px;
+}
+
+body.enBody .mrt_area .table-metro .a11 {
+  height: 107px;
+}
+
+.mrt_area .table-metro .a11 {
+  height: 60px;
+}
+
+body.enBody .mrt_area .table-metro .a12 {
+  height: 163px;
+}
+
+.mrt_area .table-metro .a12 {
+  height: 100px;
+}
+
+body.enBody .mrt_area .table-metro .y19 {
+  height: 107px;
+}
+
+.mrt_area .table-metro .y19 {
+  height: 60px;
 }
 
 .mrt_area .table-metro .table-blue {
@@ -211,10 +345,14 @@
   border: 1px solid #B7B7B7;
 }
 
+body.enBody .mrt_area .table-metro tbody tr td:first-of-type {
+  font-size: 20px;
+}
+
 .mrt_area .table-metro tbody tr td:first-of-type {
   font-size: 24px;
   font-weight: bold;
-  width: 232px;
+  width: 230px;
   text-align: center;
   vertical-align: middle;
 }
@@ -239,11 +377,84 @@
   align-items: center;
 }
 
-.short_bus_area table {
-  width: 997px;
-  height: 691px;
+body.enBody .short_bus_area .table_container {
+  max-height: 573px;
+  overflow-y: scroll;
+}
+
+.short_bus_area .table_container {
+  max-height: 691px;
   border-collapse: collapse;
   text-align: center;
+}
+
+body.enBody .short_bus_area table thead th.name {
+  width: 257px;
+}
+
+body.enBody .short_bus_area table thead th.time {
+  width: 254px;
+}
+
+.short_bus_area table thead th.name,
+.short_bus_area table thead th.time {
+  width: 232px;
+}
+
+body.enBody .short_bus_area table thead th.path {
+  width: 448px;
+}
+
+.short_bus_area table thead th.path {
+  width: 531px;
+}
+
+body.enBody .short_bus_area table tbody td.name_1 {
+  height: 181px;
+}
+
+.short_bus_area table tbody td.name_1 {
+  height: 88px;
+}
+
+body.enBody .short_bus_area table tbody td.name_2 {
+  height: 216px;
+}
+
+.short_bus_area table tbody td.name_2 {
+  height: 138px;
+}
+
+body.enBody .short_bus_area table tbody td.name_3 {
+  height: 119px;
+}
+
+.short_bus_area table tbody td.name_3 {
+  height: 67px;
+}
+
+body.enBody .short_bus_area table tbody td.name_4 {
+  height: 181px;
+}
+
+.short_bus_area table tbody td.name_4 {
+  height: 88px;
+}
+
+body.enBody .short_bus_area table tbody td.name_5 {
+  height: 216px;
+}
+
+.short_bus_area table tbody td.name_5 {
+  height: 138px;
+}
+
+body.enBody .short_bus_area table tbody td.name_6 {
+  height: 216px;
+}
+
+.short_bus_area table tbody td.name_6 {
+  height: 138px;
 }
 
 .short_bus_area table thead th {
@@ -264,9 +475,23 @@
   border: 1px solid #B7B7B7;
 }
 
+body.enBody .drive_area .totalBlock {
+  max-height: 588px;
+  overflow-y: scroll;
+}
+
 .drive_area .totalBlock {
   display: flex;
   flex-direction: column;
+}
+
+body.enBody .drive_area .block {
+  flex-direction: column;
+  align-items: center;
+}
+
+body.enBody .drive_area .block:last-of-type {
+  margin-top: 40px;
 }
 
 .drive_area .block {

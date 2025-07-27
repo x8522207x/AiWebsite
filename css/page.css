@@ -99,6 +99,11 @@ button {
   padding: 0;
 }
 
+ol,
+ul {
+  list-style: none;
+}
+
 .logo_area {
   height: 220px;
   width: auto;
@@ -162,6 +167,10 @@ button {
 
 .english.active {
   background-image: url(../img/icon/english_active.png);
+}
+
+body.enBody .back_btn>a {
+  background-image: url(../img/icon/back_menu_en.png);
 }
 
 .back_btn>a {

@@ -61,12 +61,16 @@ function checkStarCount() {
 
 function submitRating() {
     document.querySelector('.content>.submit_btn').classList.add('disabled');
+    const taiwanTime = new Date().toLocaleString("zh-TW", {
+        timeZone: "Asia/Taipei"
+    });
     const ratings = {
         aiAudio: Array.from(document.querySelectorAll('.rate_ai_area .grade .active')).length,
         floorIntro: Array.from(document.querySelectorAll('.rate_floor_area .grade .active')).length,
         trafficInfo: Array.from(document.querySelectorAll('.rate_transportation_area .grade .active')).length,
         nearbyShops: Array.from(document.querySelectorAll('.rate_store_area .grade .active')).length,
-        multimedia: Array.from(document.querySelectorAll('.rate_media_area .grade .active')).length
+        multimedia: Array.from(document.querySelectorAll('.rate_media_area .grade .active')).length,
+        timestamp: taiwanTime,
     };
 
     // 使用 JSONP 方式避免 CORS 問題
@@ -102,6 +106,6 @@ function submitRating() {
     };
 
     // 發送請求
-    script.src = `https://script.google.com/macros/s/AKfycbzLQ9kf998BIFHJbSGK2hinrJj9SbZte9IGNpLrzHubIcLXpa51Deh6K-8MR6-HxOdH/exec?${params}`;
+    script.src = `https://script.google.com/macros/s/AKfycbwAWExudN8gOC-CgwI6mIX3R-Og7Cl01YViNCfjRHWKghSNUTlUwL0Zxc1e6uO0947f/exec?${params}`;
     document.body.appendChild(script);
 }

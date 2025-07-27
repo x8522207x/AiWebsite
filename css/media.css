@@ -1,10 +1,22 @@
+body.enBody .media_title {
+  background-image: url(../img/media/media_title_en.png);
+}
+
 .media_title {
   background-image: url(../img/media/media_title.png);
+}
+
+body.enBody .content>.media_cast_title {
+  background-image: url(../img/media/media_cast_title_en.png);
 }
 
 .content>.media_cast_title {
   background-image: url(../img/media/media_cast_title.png);
   height: 184px;
+}
+
+body.enBody .content>.submit_btn {
+  background-image: url(../img/media/submit_btn_en.png);
 }
 
 .content>.submit_btn {
@@ -15,6 +27,10 @@
   width: 218px;
   height: 100px;
   margin-top: 40px;
+}
+
+body.enBody .content>.submit_btn.disabled {
+  background-image: url(../img/media/submit_btn_disabled_en.png);
 }
 
 .content>.submit_btn.disabled {
@@ -125,10 +141,20 @@
   background-size: contain;
 }
 
+body.enBody .rate_area .rate_ai_area .title {
+  background-image: url(../img/media/rate_ai_title_en.png);
+  width: 442.56px;
+}
+
 .rate_area .rate_ai_area .title {
   background-image: url(../img/media/rate_ai_title.png);
   width: 438.56px;
   height: 69px;
+}
+
+body.enBody .rate_area .rate_floor_area .title {
+  background-image: url(../img/media/rate_floor_title_en.png);
+  width: 518.56px;
 }
 
 .rate_area .rate_floor_area .title {
@@ -137,10 +163,20 @@
   height: 69px;
 }
 
+body.enBody .rate_area .rate_transportation_area .title {
+  background-image: url(../img/media/rate_transportation_title_en.png);
+  width: 699.56px;
+}
+
 .rate_area .rate_transportation_area .title {
   background-image: url(../img/media/rate_transportation_title.png);
   width: 475.56px;
   height: 69px;
+}
+
+body.enBody .rate_area .rate_store_area .title {
+  background-image: url(../img/media/rate_store_title_en.png);
+  width: 789.56px;
 }
 
 .rate_area .rate_store_area .title {
@@ -149,9 +185,14 @@
   height: 69px;
 }
 
+body.enBody .rate_area .rate_media_area .title {
+  background-image: url(../img/media/rate_media_title_en.png);
+  width: 519.56px;
+}
+
 .rate_area .rate_media_area .title {
   background-image: url(../img/media/rate_media_title.png);
-  width: 425.5556640625px;
+  width: 425.56px;
   height: 69px;
 }
 
@@ -193,6 +234,10 @@
 
 .mask.hidden {
   display: none;
+}
+
+body.enBody .dialog {
+  background-image: url(../img/media/dialog_en.png);
 }
 
 .dialog {

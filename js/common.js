@@ -2,8 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let lang = localStorage.getItem('lang');
     let page = localStorage.getItem('page');
     if (!lang) {
-        lang = 'ch';
+        lang = 'zh';
         localStorage.setItem('lang', lang);
+        document.querySelector('body').classList.remove('enBody');
     }
 
     if (!page) {
@@ -13,12 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     checkBtnClass(lang, page);
     document.querySelector('.chinese').addEventListener('click', () => {
-        localStorage.setItem('lang', 'ch');
-        lang = 'ch';
+        document.querySelector('body').classList.remove('enBody');
+        localStorage.setItem('lang', 'zh');
+        lang = 'zh';
         checkBtnClass(lang, page);
     });
 
     document.querySelector('.english').addEventListener('click', () => {
+        document.querySelector('body').classList.add('enBody');
         localStorage.setItem('lang', 'en');
         lang = 'en';
         checkBtnClass(lang, page);
@@ -32,11 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
 function modifyChineseElements(page) {
     switch (page) {
         case 'index':
-            document.querySelector('.ai_page>a').style.backgroundImage = "url('../img/ai_button.png')";
-            document.querySelector('.floor_page>a').style.backgroundImage = "url('../img/floor_button.png')";
-            document.querySelector('.transportation_page>a').style.backgroundImage = "url('../img/transportation_button.png')";
-            document.querySelector('.store_page>a').style.backgroundImage = "url('../img/store_button.png')";
-            document.querySelector('.media_page>a').style.backgroundImage = "url('../img/media_button.png')";
             break;
         case "ai":
             break;
@@ -46,7 +44,7 @@ function modifyChineseElements(page) {
             document.querySelector('.long_bus_area>.table_container .header1').innerText = "林口轉運站發車";
             document.querySelector('.long_bus_area>.table_container .header2 ').innerText = "檔案館發車";
             document.querySelector('.long_bus_area>.desc').innerText = "週一至週五 7/7起適用，9/2起對外服務試營運，每週六加開接駁班次。";
-            document.querySelector('.mrt_area>.table-metro .table-purple>th').innerText = "桃園機場捷運";
+            document.querySelector('.mrt_area>.table_container>.table-metro .table-purple>th').innerText = "桃園機場捷運";
             document.querySelector('.mrt_area .a8').innerText = "長庚醫院站 A8";
             document.querySelector('.mrt_area .a8_1').innerHTML = `
             ➤ 轉乘858路線公車，於<strong>林口國宅站（國家檔案館站）</strong>下車。`;
@@ -56,7 +54,7 @@ function modifyChineseElements(page) {
             ➤ 轉乘937或946路線公車，於<strong>夢想之都站</strong>下車，步行8分鐘。<br /> 
             ➤ 轉乘936或945路線公車，於<strong>空間樂園社區站</strong>下車，步行5分鐘。<br /> 
             ➤ 步行5分鐘至文化二路一段郵局站，轉乘920、967路線公車，於<strong>空間樂園社區站</strong>下車，步行5分鐘。`;
-            document.querySelector('.mrt_area>.table-metro .table-blue>th').innerText = "臺北捷運";
+            document.querySelector('.mrt_area>.table_container>.table-metro .table-blue>th').innerText = "臺北捷運";
             document.querySelector('.mrt_area .a10').innerText = "臺北車站";
             document.querySelector('.mrt_area .a10_1').innerHTML = `
             ➤ 轉乘966路線公車，於<strong>運動公園站</strong>下車，步行4分鐘。`;
@@ -67,7 +65,7 @@ function modifyChineseElements(page) {
             document.querySelector('.mrt_area .a12_1').innerHTML = `
             ➤ 於<strong>蘆洲站</strong>轉乘925路線公車，於<strong>運動公園站</strong>下車，步行4分鐘。<br /> 
             ➤ 於<strong>迴龍站</strong>轉乘898路線公車，於<strong>林口國宅站（國家檔案館站）</strong>下車。`;
-            document.querySelector('.mrt_area>.table-metro .table-yellow>th').innerText = "環狀線";
+            document.querySelector('.mrt_area>.table_container>.table-metro .table-yellow>th').innerText = "環狀線";
             document.querySelector('.mrt_area .y19').innerText = "幸福站 Y19";
             document.querySelector('.mrt_area .y19_1').innerHTML = `
             ➤ 於<strong>幸福站Y19</strong>轉乘920路線公車，於<strong>空間樂園社區站</strong>下車，步行5分鐘。`;
@@ -118,11 +116,6 @@ function modifyChineseElements(page) {
 function modifyEnglishElements(page) {
     switch (page) {
         case 'index':
-            document.querySelector('.ai_page>a').style.backgroundImage = "url('../img/ai_button_en.png')";
-            document.querySelector('.floor_page>a').style.backgroundImage = "url('../img/floor_button_en.png')";
-            document.querySelector('.transportation_page>a').style.backgroundImage = "url('../img/transportation_button_en.png')";
-            document.querySelector('.store_page>a').style.backgroundImage = "url('../img/store_button_en.png')";
-            document.querySelector('.media_page>a').style.backgroundImage = "url('../img/media_button_en.png')";
             break;
         case "ai":
             break;
@@ -131,9 +124,9 @@ function modifyEnglishElements(page) {
         case "transportation":
             document.querySelector('.long_bus_area>.table_container .header1').innerText = "To NDC";
             document.querySelector('.long_bus_area>.table_container .header2 ').innerText = "To Linkou Bus Station";
-            document.querySelector('.long_bus_area>.desc').innerText = "Starting July 7, weekday service (Monday to Friday) will be in effect. Trial operation for the public will begin on September 2, with additional shuttle runs on Saturdays.";
-            document.querySelector('.mrt_area>.table-metro .table-purple>th').innerText = "Taoyuan Airport MRT";
-            document.querySelector('.mrt_area .a8').innerText = "Chang Gung Memorial Hospital Station (A8)";
+            document.querySelector('.long_bus_area>.desc').innerHTML = "Starting July 7, weekday service (Monday to Friday) will be in effect.<br>Trial operation for the public will begin on September 2,<br>with additional shuttle runs on Saturdays.";
+            document.querySelector('.mrt_area>.table_container>.table-metro .table-purple>th').innerText = "Taoyuan Airport MRT";
+            document.querySelector('.mrt_area .a8').innerHTML = "Chang Gung<br>Memorial Hospital Station (A8)";
             document.querySelector('.mrt_area .a8_1').innerHTML = "➤ Transfer to Bus 858, get off at <strong>Linkou Public Housing Station (National Archives Bureau Station)</strong>.";
             document.querySelector('.mrt_area .a9').innerText = "Linkou Station (A9)";
             document.querySelector('.mrt_area .a9_1').innerHTML = `
@@ -141,7 +134,7 @@ function modifyEnglishElements(page) {
             ➤ Transfer to Bus 937 or 946, get off at <strong>Dream Mall Station</strong>, walk 8 minutes.<br /> 
             ➤ Transfer to Bus 936 or 945, get off at <strong>Space Wonderland Community Station</strong>, walk 5 minutes.<br /> 
             ➤ Walk 5 minutes to Cultural 2nd Rd. Sec. 1 Post Office Stop, transfer to Bus 920 or 967, get off at <strong>Space Wonderland Community Station</strong>, walk 5 minutes.`;
-            document.querySelector('.mrt_area>.table-metro .table-blue>th').innerText = "Taipei Metro";
+            document.querySelector('.mrt_area>.table_container>.table-metro .table-blue>th').innerText = "Taipei Metro";
             document.querySelector('.mrt_area .a10').innerText = "Taipei Metro";
             document.querySelector('.mrt_area .a10_1').innerHTML = `
             ➤ Transfer to Bus 966, get off at <strong>Sports Park Station</strong>, walk 4 minutes.`;
@@ -152,7 +145,7 @@ function modifyEnglishElements(page) {
             document.querySelector('.mrt_area .a12_1').innerHTML = `
             ➤ Transfer at <strong> Luzhou Station</strong> to Bus 925, get off at <strong>Sports Park Station</strong>, walk 4 minutes.<br /> 
             ➤ Transfer at <strong>Huilong Station</strong> to Bus 898, get off at <strong>Linkou Public Housing Station (National Archives Bureau Station)</strong>.`;
-            document.querySelector('.mrt_area>.table-metro .table-yellow>th').innerText = "Circular Line";
+            document.querySelector('.mrt_area>.table_container>.table-metro .table-yellow>th').innerText = "Circular Line";
             document.querySelector('.mrt_area .y19').innerText = "Xingfu Station (Y19)";
             document.querySelector('.mrt_area .y19_1').innerHTML = `
             ➤ Transfer to Bus 920 at <strong>Xingfu Station (Y19)</strong>, get off at <strong>Space Wonderland Community Station</strong>, walk 5 minutes.`;
@@ -180,12 +173,13 @@ function modifyEnglishElements(page) {
             document.querySelectorAll('.drive_area .direction')[0].innerText = "Southbound:";
             document.querySelectorAll('.drive_area .direction')[1].innerText = "Northbound:";
             document.querySelectorAll('.drive_area .path')[0].innerHTML = `
-            Take Wenhua 1st Rd. Sec. 1 <strong>→</strong> turn onto Zhongxiao Rd. <strong>→</strong> turn right onto Gongyuan Rd. to reach <strong>NDC (Parking Lot)</strong>`;
+            Take <strong>Wenhua 1st Rd. Sec. 1</strong><br><strong>→</strong> turn onto Zhongxiao Rd.<br><strong>→</strong> turn right onto Gongyuan Rd. to reach <strong>NDC (Parking Lot)</strong>, or go straight and turn right onto <strong>Archives Rd.</strong> to reach the Main Entrance.`;
+
             document.querySelectorAll('.drive_area .path')[1].innerHTML = `
-                <strong>1.</strong>Take Wenhua 2nd Rd. Sec. 1 <strong>→</strong> turn right onto Archives Rd. to reach the <strong>Main Entrance of NDC</strong>.<br />
-                To access the parking lot, continue straight and turn right onto <strong>Wenhua 1st Rd.</strong>, follow the outer road of the park, and enter from <strong>Gongyuan Rd. side</strong>.<br />
-                <strong>２.</strong> Take Wenhua 3rd Rd. Sec. 1 <strong>→</strong> turn right onto <strong>Ren'ai 1st Rd.</strong>and go straight <br />
-                <strong>→</strong> arrive at <strong>Archives Rd. (Main Entrance).</strong>To access the parking lot, continue straight and turn right onto <strong>Wenhua 1st Rd.</strong>, follow the outer road of the park, and enter from <strong>Gongyuan Rd.</strong> side.`;
+                <strong>1.</strong>Take <strong>Wenhua 2nd Rd. Sec. 1 →</strong> turn right onto Archives Rd. to reach the <strong>Main Entrance of NDC</strong>.<br />
+                To access the parking lot, continue straight and turn right onto <strong>Wenhua 1st Rd. </strong>, follow the outer road of the park, and enter from <strong>Gongyuan Rd. side</strong>.<br />
+                <strong>２.</strong> Take <strong>Wenhua 3rd Rd. Sec. 1 →</strong> turn right onto <strong>Ren'ai 1st Rd.</strong> and go straight <br />
+                <strong>→</strong> arrive at <strong>Archives Rd. (Main Entrance).</strong> To access the parking lot, continue straight and turn right onto <strong>Wenhua 1st Rd.</strong> , follow the outer road of the park, and enter from <strong>Gongyuan Rd.</strong> side.`;
             break;
         case "store":
             break;
@@ -195,11 +189,13 @@ function modifyEnglishElements(page) {
 }
 
 function checkBtnClass(lang, page) {
-    if (lang === 'ch') {
+    if (lang === 'zh') {
+        document.querySelector('body').classList.remove('enBody');
         document.querySelector('.chinese').classList.add('active');
         document.querySelector('.english').classList.remove('active');
         modifyChineseElements(page);
     } else {
+        document.querySelector('body').classList.add('enBody');
         document.querySelector('.chinese').classList.remove('active');
         document.querySelector('.english').classList.add('active');
         modifyEnglishElements(page);

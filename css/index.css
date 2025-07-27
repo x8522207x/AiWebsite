@@ -22,20 +22,40 @@
   background-position: 50% 50%;
 }
 
+body.enBody .ai_page>a {
+  background-image: url(../img/ai_button_en.png);
+}
+
 .ai_page>a {
   background-image: url(../img/ai_button.png);
+}
+
+body.enBody .floor_page>a {
+  background-image: url(../img/floor_button_en.png);
 }
 
 .floor_page>a {
   background-image: url(../img/floor_button.png);
 }
 
+body.enBody .transportation_page>a {
+  background-image: url(../img/transportation_button_en.png);
+}
+
 .transportation_page>a {
   background-image: url(../img/transportation_button.png);
 }
 
+body.enBody .store_page>a {
+  background-image: url(../img/store_button_en.png);
+}
+
 .store_page>a {
   background-image: url(../img/store_button.png);
+}
+
+body.enBody .media_page>a {
+  background-image: url(../img/media_button_en.png);
 }
 
 .media_page>a {
