@@ -59,18 +59,23 @@ body.enBody .floor_title {
   vertical-align: middle;
   text-align: center;
   color: #FFFFFF;
-  text-shadow: 0px 0px 4px rgba(211, 83, 68, 0.3);
+  text-shadow: -1px -1px 0 rgba(211, 83, 68, 0.3), 1px -1px 0 rgba(211, 83, 68, 0.3), -1px 1px 0 rgba(211, 83, 68, 0.3), 1px 1px 0 rgba(211, 83, 68, 0.3);
 }
 
 .swiper-slide>.threef_map {
-  background-image: url(../img/floor/2f_map.png);
+  background-image: url(../img/floor/3f_map.png);
+}
+
+.swiper-slide>.threef_map>.mark1 {
+  top: 661px;
+  left: 455px;
 }
 
 .swiper-slide>.twof_map {
   background-image: url(../img/floor/2f_map.png);
 }
 
-.swiper-slide>.twof_map>span {
+.swiper-slide>div>span {
   display: none;
   position: absolute;
   width: 448px;
@@ -80,7 +85,7 @@ body.enBody .floor_title {
   background-size: contain;
 }
 
-.swiper-slide>.twof_map>span.active {
+.swiper-slide>div>span.active {
   display: block;
   z-index: 1000;
 }
@@ -152,13 +157,56 @@ body.enBody .floor_title {
 }
 
 .swiper-slide>.onef_map {
-  background-image: url(../img/floor/2f_map.png);
+  background-image: url(../img/floor/1f_map.png);
+}
+
+.swiper-slide>.onef_map>.mark1 {
+  top: 565px;
+  left: 245px;
+  transform: rotate(351.23deg);
+}
+
+.swiper-slide>.onef_map>.mark2 {
+  top: 600px;
+  left: 312px;
+  transform: rotate(351.23deg);
+}
+
+.swiper-slide>.onef_map>.mark3 {
+  top: 641px;
+  left: 388px;
+  transform: rotate(351.23deg);
+}
+
+.swiper-slide>.onef_map>.mark4 {
+  top: 705px;
+  left: 486px;
 }
 
 .swiper-slide>.b1_map {
-  background-image: url(../img/floor/2f_map.png);
+  background-image: url(../img/floor/b1_map.png);
 }
 
-.swiper-slide>.b2_map {
-  background-image: url(../img/floor/2f_map.png);
+.swiper-slide>.b1_map>.mark1 {
+  top: 477px;
+  left: 201px;
+  transform: rotate(1.32deg);
+}
+
+.swiper-slide>.b1_map>.mark2 {
+  top: 550px;
+  left: 355px;
+  transform: rotate(1.32deg);
+}
+
+.swiper-slide>.b1_map>.mark3 {
+  top: 573px;
+  left: 672px;
+  transform: rotate(1.32deg);
+}
+
+.swiper-slide>.b1_map>.mark4 {
+  top: 679px;
+  left: 717px;
+  transform: rotate(1.32deg);
 }

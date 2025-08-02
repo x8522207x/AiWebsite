@@ -5,3 +5,102 @@ body.enBody .store_title {
 .store_title {
   background-image: url(../img/store/store_title.png);
 }
+
+.store .subcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.store .map {
+  background-image: url(../img/transportation/map.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 809px;
+  height: 638px;
+  margin-top: 30px;
+}
+
+body.enBody .store .tab_list {
+  width: 640px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.store .tab_list {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+
+body.enBody .foodTab {
+  background-image: url(../img/store/food_btn.png);
+  width: 460px;
+}
+
+.foodTab {
+  background-image: url(../img/store/food_btn.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 160px;
+}
+
+body.enBody .foodTab.active {
+  background-image: url(../img/store/food_btn_active.png);
+}
+
+.foodTab.active {
+  background-image: url(../img/store/food_btn_active.png);
+}
+
+body.enBody .travelTab {
+  background-image: url(../img/store/travel_btn.png);
+}
+
+.travelTab {
+  background-image: url(../img/store/travel_btn.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 160px;
+}
+
+body.enBody .travelTab.active {
+  background-image: url(../img/store/travel_btn_active.png);
+}
+
+.travelTab.active {
+  background-image: url(../img/store/travel_btn_active.png);
+}
+
+body.enBody .storeTab {
+  background-image: url(../img/store/store_btn.png);
+}
+
+.storeTab {
+  background-image: url(../img/store/store_btn.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 260px;
+}
+
+body.enBody .storeTab.active {
+  background-image: url(../img/store/store_btn_active.png);
+}
+
+.storeTab.active {
+  background-image: url(../img/store/store_btn_active.png);
+}
+
+/* .store .tab_list>button:not(:first-of-type) {
+  margin-left: 30px;
+} */

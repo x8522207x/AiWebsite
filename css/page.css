@@ -104,6 +104,27 @@ ul {
   list-style: none;
 }
 
+.zh-TW-show,
+.content.active,
+.media_main.active,
+.media_cast.active,
+.media_picture.active,
+.media_video.active,
+body.enBody .en-show {
+  display: block;
+}
+
+.en-show,
+body.enBody .zh-TW-show,
+.media_main,
+.media_cast,
+.media_picture,
+.media_video,
+.mask.hidden,
+.content_body>div {
+  display: none;
+}
+
 .logo_area {
   height: 220px;
   width: auto;
@@ -124,24 +145,75 @@ ul {
   height: 120px;
 }
 
-.bottom_area {
+.button_area {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
 }
 
-.back_btn {
+.page_list {
   display: flex;
-  align-self: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-left: 50px;
 }
 
-.lang_list {
-  display: flex;
-  justify-content: end;
+.page_list>div {
+  width: 100px;
+  height: 100px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.chinese {
+.page_list .ai_page {
+  background-image: url(../img/icon/ai_page.png);
+}
+
+.page_list .ai_page.active {
+  background-image: url(../img/icon/ai_page_active.png);
+}
+
+.page_list .floor_page {
+  background-image: url(../img/icon/floor_page.png);
+}
+
+.page_list .floor_page.active {
+  background-image: url(../img/icon/floor_page_active.png);
+}
+
+.page_list .transportation_page {
+  background-image: url(../img/icon/transportation_page.png);
+}
+
+.page_list .transportation_page.active {
+  background-image: url(../img/icon/transportation_page_active.png);
+}
+
+.page_list .store_page {
+  background-image: url(../img/icon/store_page.png);
+}
+
+.page_list .store_page.active {
+  background-image: url(../img/icon/store_page_active.png);
+}
+
+.page_list .media_page {
+  background-image: url(../img/icon/media_page.png);
+}
+
+.page_list .media_page.active {
+  background-image: url(../img/icon/media_page_active.png);
+}
+
+.lang_list,
+.content_body .display {
+  display: flex;
+}
+
+.zh-TW {
   background-image: url(../img/icon/chinese.png);
   background-size: contain;
   background-position: 50% 50%;
@@ -151,7 +223,7 @@ ul {
   margin-right: 30px;
 }
 
-.chinese.active {
+.zh-TW.active {
   background-image: url(../img/icon/chinese_active.png);
 }
 
@@ -169,29 +241,21 @@ ul {
   background-image: url(../img/icon/english_active.png);
 }
 
-body.enBody .back_btn>a {
-  background-image: url(../img/icon/back_menu_en.png);
-}
-
-.back_btn>a {
-  background-image: url(../img/icon/back_menu.png);
-  background-size: contain;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  width: 330px;
-  height: 100px;
-  margin-left: 50px;
-}
-
 .content {
   height: 1525px;
+  display: none;
+  background: linear-gradient(to bottom, #F3F9F8 00%, #768B9E 100%);
+  padding-top: 20px;
+}
+
+.transportation  .subcontent {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 
-.content>.title {
+.title {
   background-size: contain;
   background-position: 50% 50%;
   background-repeat: no-repeat;

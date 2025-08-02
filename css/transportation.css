@@ -6,7 +6,7 @@ body.enBody .transportation_title {
   background-image: url(../img/transportation/transportation_title.png);
 }
 
-.map {
+.transportation .map {
   background-image: url(../img/transportation/map.png);
   background-position: 50% 50%;
   background-size: contain;
@@ -16,41 +16,20 @@ body.enBody .transportation_title {
   margin-top: 29px;
 }
 
-body.enBody .tab_list {
+body.enBody .transportation .tab_list {
   width: 887px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.tab_list {
+.transportation .tab_list {
   margin-top: 25px;
   display: flex;
   align-items: center;
 }
 
-.tab_list>button:not(:first-of-type) {
+.transportation .tab_list>button:not(:first-of-type) {
   margin-left: 30px;
-}
-
-body.enBody .mapTab {
-  background-image: url(../img/transportation/map_tab_en.png);
-}
-
-.mapTab {
-  background-image: url(../img/transportation/map_tab.png);
-  background-position: 50% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100px;
-  width: 160px;
-}
-
-body.enBody .mapTab.active {
-  background-image: url(../img/transportation/map_tab_active_en.png);
-}
-
-.mapTab.active {
-  background-image: url(../img/transportation/map_tab_active.png);
 }
 
 body.enBody .longBusTab {
@@ -147,31 +126,6 @@ body.enBody .content_body {
   margin-top: 25px;
   height: 750px;
   width: 100%;
-}
-
-.content_body .display {
-  display: flex;
-}
-
-.content_body>div {
-  display: none;
-}
-
-body.enBody .map_area {
-  height: 576px;
-  width: 768px;
-  margin-left: 156px;
-}
-
-.map_area {
-  background-image: url(../img/transportation/map_area.png);
-  background-position: 50% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 750px;
-  width: 1000px;
-  margin-left: 40px;
-  border: 3px #03182C;
 }
 
 .long_bus_area {
