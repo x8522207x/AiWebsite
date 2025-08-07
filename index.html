@@ -6,6 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
+    <meta http-equiv="Permissions-Policy" content="autoplay=*, fullscreen=*">
     <title>國家檔案館</title>
     <link rel="stylesheet" href="./css/page.css" />
     <link rel="stylesheet" href="./css/ai.css" />
@@ -608,8 +609,22 @@
         </div>
         <div class="submit_btn"></div>
       </div>
-      <div class="subcontent media_picture"></div>
-      <div class="subcontent media_video"></div>
+      <div class="subcontent media_picture">
+        <iframe
+          src="https://d21r6tjqqrwvc1.cloudfront.net/zh/"
+          allow="camera"
+          width="1080"
+          height="1400"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="subcontent media_video">
+        <div class="return_menu"></div>
+        <div class="video_btn1"></div>
+        <div class="video_btn2"></div>
+        <div class="video_btn3"></div>
+        <div class="video"></div>
+      </div>
     </div>
     <div class="content floor">
       <div class="button_area">
@@ -646,47 +661,62 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="threef_map">
-                <div class="mark1">國家檔案閱覽中心</div>
+                <div class="mark1 zh-TW-show">國家檔案閱覽中心</div>
+                <div class="mark1 en-show">Archives Access Center</div>
                 <span class="threef_mark1"></span>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="twof_map">
-                <div class="mark1">檔案 FUN 體驗</div>
+                <div class="mark1 zh-TW-show">檔案 FUN 體驗</div>
+                <div class="mark1 en-show">Fun ! Archives</div>
                 <span class="twof_mark1"></span>
-                <div class="mark2">阿凱將<br />小屋</div>
+                <div class="mark2 zh-TW-show">阿凱將<br />小屋</div>
+                <div class="mark2 en-show">Archives Little House</div>
                 <span class="twof_mark2"></span>
-                <div class="mark3">輕食餐廳</div>
+                <div class="mark3 zh-TW-show">輕食餐廳</div>
+                <div class="mark3 en-show">Light Food Restaurent</div>
                 <span class="twof_mark3"></span>
-                <div class="mark4">文創商店</div>
+                <div class="mark4 zh-TW-show">文創商店</div>
+                <div class="mark4 en-show">Creative Product Shop</div>
                 <span class="twof_mark4"></span>
-                <div class="mark5">特展廳</div>
+                <div class="mark5 zh-TW-show">特展廳</div>
+                <div class="mark5 en-show">Special Exhibition</div>
                 <span class="twof_mark5"></span>
-                <div class="mark6">常設展廳</div>
+                <div class="mark6 zh-TW-show">常設展廳</div>
+                <div class="mark6 en-show">Permanent Exhibition</div>
                 <span class="twof_mark6"></span>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="onef_map">
-                <div class="mark1">多功能室(3)</div>
+                <div class="mark1 zh-TW-show">多功能室(3)</div>
+                <div class="mark1 en-show">Multifunctional Room (3)</div>
                 <span class="onef_mark1"></span>
-                <div class="mark2">多功能室(2)</div>
+                <div class="mark2 zh-TW-show">多功能室(2)</div>
+                <div class="mark2 en-show">Multifunctional Room (2)</div>
                 <span class="onef_mark2"></span>
-                <div class="mark3">多功能室(1)</div>
+                <div class="mark3 zh-TW-show">多功能室(1)</div>
+                <div class="mark3 en-show">Multifunctional Room (1)</div>
                 <span class="onef_mark3"></span>
-                <div class="mark4">檔案大廳</div>
+                <div class="mark4 zh-TW-show">檔案大廳</div>
+                <div class="mark4 en-show">Archives Gallery</div>
                 <span class="onef_mark4"></span>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="b1_map">
-                <div class="mark1">停車管理中心</div>
+                <div class="mark1 zh-TW-show">停車管理中心</div>
+                <div class="mark1 en-show">Parking Management Center</div>
                 <span class="b1_mark1"></span>
-                <div class="mark2">充電車位</div>
+                <div class="mark2 zh-TW-show">充電車位</div>
+                <div class="mark2 en-show">EV Parking</div>
                 <span class="b1_mark2"></span>
-                <div class="mark3">友善車位</div>
+                <div class="mark3 zh-TW-show">友善車位</div>
+                <div class="mark3 en-show">Maternal and Child Parking Space</div>
                 <span class="b1_mark3"></span>
-                <div class="mark4">司機休息室</div>
+                <div class="mark4 zh-TW-show">司機休息室</div>
+                <div class="mark4 en-show">司機休息室</div>
                 <span class="b1_mark4"></span>
               </div>
             </div>

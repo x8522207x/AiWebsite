@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 modifyClass(p);
                 localStorage.setItem('page', p);
                 page = p;
+                const iframe = document.querySelector('.media .media_video .video').children[0];
+                iframe?.remove();
             });
         });
     });
@@ -109,6 +111,42 @@ document.addEventListener("DOMContentLoaded", () => {
             item.classList.remove('active');
         });
         document.querySelector('.media>.subcontent.media_video').classList.add('active');
+        document.querySelector('.media .media_video .video').innerHTML = `
+        <iframe src="https://drive.google.com/file/d/1M1CDb9jumA5jnSQQh46pwgDKTStzhPyl/preview" width="1080" height="606.7" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        `;
+    });
+
+    document.querySelector('.media .media_video .return_menu').addEventListener('click', () => {
+        document.querySelectorAll('.media>.subcontent').forEach(item => {
+            item.classList.remove('active');
+        });
+        document.querySelector('.media>.subcontent.media_main').classList.add('active');
+        document.querySelector('.media .media_video .video').children[0].remove();
+    });
+
+    document.querySelector('.media .media_video .video_btn1').addEventListener('click', () => {
+        document.querySelector('.media .media_video .video').children[0].remove();
+        document.querySelector('.media .media_video .video').innerHTML = `
+        <iframe src="https://drive.google.com/file/d/1M1CDb9jumA5jnSQQh46pwgDKTStzhPyl/preview" width="1080" height="606.7" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        `;
+    });
+
+    document.querySelector('.media .media_video .video_btn2').addEventListener('click', () => {
+        document.querySelector('.media .media_video .video').children[0].remove();
+        document.querySelector('.media .media_video .video').innerHTML = `
+        <iframe src="https://drive.google.com/file/d/1zptwJoUnJTDU2ut0JKRSoMl3fwsXqRO8/preview" width="1080" height="606.7" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        `;
+    });
+
+    document.querySelector('.media .media_video .video_btn3').addEventListener('click', () => {
+        document.querySelector('.media .media_video .video').children[0].remove();
+        document.querySelector('.media .media_video .video').innerHTML = `
+        <iframe src="https://drive.google.com/file/d/14awtPiDdC2ep5oADcay2sZy4RTwRnS-l/preview" width="1080" height="606.7" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        `;
     });
 
     document.querySelector('.media_main>.menu_list>.picture_btn').addEventListener('click', () => {
@@ -228,6 +266,17 @@ function checkBtnClass(lang) {
           frameborder="0"
         ></iframe>
         `;
+
+        document.querySelector('.media .media_picture').children[0].remove();
+        document.querySelector('.media .media_picture').innerHTML = `
+        <iframe
+          src="https://d21r6tjqqrwvc1.cloudfront.net/zh/"
+          allow="camera"
+          width="1080"
+          height="1400"
+          frameborder="0"
+        ></iframe>
+        `;
     } else {
         document.querySelector('body').classList.add('enBody');
         document.querySelectorAll('.zh-TW').forEach(item => {
@@ -241,6 +290,16 @@ function checkBtnClass(lang) {
         <iframe
           src="https://one.ubitus.ai/one/339f4dd4-a0b7-4ae4-81da-13d075c57b99/"
           allow="microphone"
+          width="1080"
+          height="1400"
+          frameborder="0"
+        ></iframe>
+        `;
+        document.querySelector('.media .media_picture').children[0].remove();
+        document.querySelector('.media .media_picture').innerHTML = `
+        <iframe
+          src="https://d21r6tjqqrwvc1.cloudfront.net/en/"
+          allow="camera"
           width="1080"
           height="1400"
           frameborder="0"
@@ -295,6 +354,28 @@ function modifyClass(page) {
         document.querySelector('.media_cast').classList.remove('active');
         document.querySelector('.media_picture').classList.remove('active');
         document.querySelector('.media_video').classList.remove('active');
+        document.querySelector('.media .media_picture').children[0].remove();
+        if (localStorage.getItem('lang') === 'zh-TW') {
+            document.querySelector('.media .media_picture').innerHTML = `
+            <iframe
+            src="https://d21r6tjqqrwvc1.cloudfront.net/zh/"
+            allow="camera"
+            width="1080"
+            height="1400"
+            frameborder="0"
+            ></iframe>
+            `;
+        } else {
+            document.querySelector('.media .media_picture').innerHTML = `
+            <iframe
+            src="https://d21r6tjqqrwvc1.cloudfront.net/en/"
+            allow="camera"
+            width="1080"
+            height="1400"
+            frameborder="0"
+            ></iframe>
+            `;
+        }
     } else if (page === 'ai') {
         document.querySelector('.ai .subcontent').children[0].remove();
         if (localStorage.getItem('lang') === 'zh-TW') {
@@ -365,6 +446,6 @@ function submitRating() {
     };
 
     // 發送請求
-    script.src = `https://script.google.com/macros/s/AKfycbwNS7trf8CBe6ruzQcYiJpUhZErvswwjMp63hxKhSLKq0EywUoRoKjI_Ld1XRLsDr9Y/exec?${params}`;
+    script.src = `https://script.google.com/macros/s/AKfycbwmxBi3SxF2hcYen_XzmWioISdRDxQqpZb7OGZgGqK7RMAXzAYLQpuOBPF8On6q1qUI/exec?${params}`;
     document.body.appendChild(script);
 }

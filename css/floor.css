@@ -54,7 +54,7 @@ body.enBody .floor_title {
 
 .swiper-slide>div>div {
   position: absolute;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   vertical-align: middle;
   text-align: center;
@@ -161,26 +161,26 @@ body.enBody .floor_title {
 }
 
 .swiper-slide>.onef_map>.mark1 {
-  top: 565px;
-  left: 245px;
+  top: 574px;
+  left: 183px;
   transform: rotate(351.23deg);
 }
 
 .swiper-slide>.onef_map>.mark2 {
-  top: 600px;
-  left: 312px;
+  top: 620px;
+  left: 250px;
   transform: rotate(351.23deg);
 }
 
 .swiper-slide>.onef_map>.mark3 {
-  top: 641px;
-  left: 388px;
+  top: 670px;
+  left: 326px;
   transform: rotate(351.23deg);
 }
 
 .swiper-slide>.onef_map>.mark4 {
-  top: 705px;
-  left: 486px;
+  top: 742px;
+  left: 460px;
 }
 
 .swiper-slide>.b1_map {
