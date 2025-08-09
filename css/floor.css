@@ -75,6 +75,10 @@ body.enBody .floor_title {
   top: 674px;
 }
 
+polygon {
+  fill: black;
+}
+
 .swiper-container {
   touch-action: auto;
   width: 100%;
@@ -112,11 +116,7 @@ body.enBody .swiper-slide>.threef_map {
 }
 
 .swiper-slide>.threef_map {
-  background-image: url(../img/floor/3f_map.png);
-}
-
-body.enBody .swiper-slide>.threef_map>.mark1 {
-  background-image: url(../img/floor/3f_area1_en.png);
+  background-image: url(../img/floor/3f_map.jpg);
 }
 
 .swiper-slide>.threef_map>.mark1 {
@@ -124,7 +124,6 @@ body.enBody .swiper-slide>.threef_map>.mark1 {
   left: 280px;
   width: 313px;
   height: 227.5px;
-  background-image: url(../img/floor/3f_area1.png);
 }
 
 .swiper-slide>.threef_map>.icon1 {
@@ -164,7 +163,7 @@ body.enBody .swiper-slide>.twof_map {
 }
 
 .swiper-slide>.twof_map {
-  background-image: url(../img/floor/2f_map.png);
+  background-image: url(../img/floor/2f_map.jpg);
 }
 
 .swiper-slide>div>span {
@@ -182,12 +181,7 @@ body.enBody .swiper-slide>.twof_map {
   z-index: 1000;
 }
 
-body.enBody .swiper-slide>.twof_map>.mark1 {
-  background-image: url(../img/floor/2f_area1_en.png);
-}
-
 .swiper-slide>.twof_map>.mark1 {
-  background-image: url(../img/floor/2f_area1.png);
   top: 125px;
   left: 382px;
   width: 198.5px;
@@ -200,12 +194,7 @@ body.enBody .swiper-slide>.twof_map>.mark1 {
   left: 395px; */
 }
 
-body.enBody .swiper-slide>.twof_map>.mark2 {
-  background-image: url(../img/floor/2f_area2_en.png);
-}
-
 .swiper-slide>.twof_map>.mark2 {
-  background-image: url(../img/floor/2f_area2.png);
   top: 361px;
   left: 506px;
   width: 105px;
@@ -219,13 +208,11 @@ body.enBody .swiper-slide>.twof_map>.mark2 {
 }
 
 body.enBody .swiper-slide>.twof_map>.mark3 {
-  background-image: url(../img/floor/2f_area3_en.png);
   width: 96px;
   height: 64.5px;
 }
 
 .swiper-slide>.twof_map>.mark3 {
-  background-image: url(../img/floor/2f_area3.png);
   top: 469px;
   left: 435px;
   width: 93.5px;
@@ -239,13 +226,11 @@ body.enBody .swiper-slide>.twof_map>.mark3 {
 }
 
 body.enBody .swiper-slide>.twof_map>.mark4 {
-  background-image: url(../img/floor/2f_area4_en.png);
   width: 133px;
-  left: 428px;
+  left: 431px;
 }
 
 .swiper-slide>.twof_map>.mark4 {
-  background-image: url(../img/floor/2f_area4.png);
   top: 397px;
   left: 445px;
   width: 107px;
@@ -258,12 +243,7 @@ body.enBody .swiper-slide>.twof_map>.mark4 {
   left: 425px; */
 }
 
-body.enBody .swiper-slide>.twof_map>.mark5 {
-  background-image: url(../img/floor/2f_area5_en.png);
-}
-
 .swiper-slide>.twof_map>.mark5 {
-  background-image: url(../img/floor/2f_area5.png);
   top: 243px;
   left: 345px;
   width: 197px;
@@ -276,12 +256,7 @@ body.enBody .swiper-slide>.twof_map>.mark5 {
   top: 115px; */
 }
 
-body.enBody .swiper-slide>.twof_map>.mark6 {
-  background-image: url(../img/floor/2f_area6_en.png);
-}
-
 .swiper-slide>.twof_map>.mark6 {
-  background-image: url(../img/floor/2f_area6.png);
   top: 198px;
   left: 493px;
   width: 195px;
@@ -294,12 +269,7 @@ body.enBody .swiper-slide>.twof_map>.mark6 {
   left: 570px; */
 }
 
-body.enBody .swiper-slide>.twof_map>.mark7 {
-  background-image: url(../img/floor/2f_area7_en.png);
-}
-
 .swiper-slide>.twof_map>.mark7 {
-  background-image: url(../img/floor/2f_area7.png);
   top: 312px;
   left: 355px;
   width: 63.5px;
@@ -317,11 +287,7 @@ body.enBody .swiper-slide>.onef_map {
 }
 
 .swiper-slide>.onef_map {
-  background-image: url(../img/floor/1f_map.png);
-}
-
-body.enBody .swiper-slide>.onef_map>.mark1 {
-  background-image: url(../img/floor/1f_area1_en.png);
+  background-image: url(../img/floor/1f_map.jpg);
 }
 
 .swiper-slide>.onef_map>.mark1 {
@@ -329,11 +295,6 @@ body.enBody .swiper-slide>.onef_map>.mark1 {
   left: 148px;
   width: 128.5px;
   height: 85px;
-  background-image: url(../img/floor/1f_area1.png);
-}
-
-body.enBody .swiper-slide>.onef_map>.mark2 {
-  background-image: url(../img/floor/1f_area2_en.png);
 }
 
 .swiper-slide>.onef_map>.mark2 {
@@ -341,11 +302,6 @@ body.enBody .swiper-slide>.onef_map>.mark2 {
   left: 213px;
   width: 128px;
   height: 85px;
-  background-image: url(../img/floor/1f_area2.png);
-}
-
-body.enBody .swiper-slide>.onef_map>.mark3 {
-  background-image: url(../img/floor/1f_area3_en.png);
 }
 
 .swiper-slide>.onef_map>.mark3 {
@@ -353,11 +309,6 @@ body.enBody .swiper-slide>.onef_map>.mark3 {
   left: 277px;
   width: 128.5px;
   height: 85px;
-  background-image: url(../img/floor/1f_area3.png);
-}
-
-body.enBody .swiper-slide>.onef_map>.mark4 {
-  background-image: url(../img/floor/1f_area4_en.png);
 }
 
 .swiper-slide>.onef_map>.mark4 {
@@ -365,7 +316,6 @@ body.enBody .swiper-slide>.onef_map>.mark4 {
   left: 341px;
   width: 181px;
   height: 119px;
-  background-image: url(../img/floor/1f_area4.png);
 }
 
 body.enBody .swiper-slide>.b1_map {
@@ -373,17 +323,15 @@ body.enBody .swiper-slide>.b1_map {
 }
 
 .swiper-slide>.b1_map {
-  background-image: url(../img/floor/b1_map.png);
+  background-image: url(../img/floor/b1_map.jpg);
 }
 
 body.enBody .swiper-slide>.b1_map>.mark1 {
-  background-image: url(../img/floor/b1_area1_en.png);
   width: 170.5px;
-  left: 157px;
+  left: 165px;
 }
 
 .swiper-slide>.b1_map>.mark1 {
-  background-image: url(../img/floor/b1_area1.png);
   top: 253px;
   left: 187px;
   width: 127.5px;
@@ -391,13 +339,11 @@ body.enBody .swiper-slide>.b1_map>.mark1 {
 }
 
 body.enBody .swiper-slide>.b1_map>.mark2 {
-  background-image: url(../img/floor/b1_area2_en.png);
   width: 91px;
   left: 303px;
 }
 
 .swiper-slide>.b1_map>.mark2 {
-  background-image: url(../img/floor/b1_area2.png);
   top: 299px;
   left: 307px;
   width: 84.5px;
@@ -405,40 +351,28 @@ body.enBody .swiper-slide>.b1_map>.mark2 {
 }
 
 body.enBody .swiper-slide>.b1_map>.mark3 {
-  background-image: url(../img/floor/b1_area3_en.png);
   width: 178px;
-  left: 467px;
+  left: 487px;
 }
 
 .swiper-slide>.b1_map>.mark3 {
-  background-image: url(../img/floor/b1_area3.png);
   top: 299px;
   left: 508px;
   width: 136.5px;
   height: 74px;
+  fill: transparent;
 }
 
 body.enBody .swiper-slide>.b1_map>.mark4 {
-  background-image: url(../img/floor/b1_area4_en.png);
-  width: 87.5px;
-  height: 50px;
-  left: 540px;
+  left: 531px;
+  top: 218px;
 }
 
 .swiper-slide>.b1_map>.mark4 {
-  background-image: url(../img/floor/b1_area4.png);
-  top: 226px;
-  left: 539px;
+  top: 218px;
+  left: 530px;
   width: 105.5px;
   height: 49px;
-}
-
-.swiper-slide>.b1_map>.icon {
-  background-image: url(../img/floor/b1_icon.png);
-  top: 318px;
-  left: 590px;
-  width: 45.5px;
-  height: 66px;
 }
 
 .icon_list>div {
