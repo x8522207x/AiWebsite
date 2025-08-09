@@ -42,69 +42,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // floor
+    floor();
+    media();
+    transportation();
+    store();
+});
 
-    let pcSwiperPage;
-    const pcSwiper = () => {
-        pcSwiperPage = new Swiper('.swiper-container', {
-            direction: 'vertical',
-            touchReleaseOnEdges: true,
-            mousewheel: {
-                releaseOnEdges: true,
-            },
-            loop: false,
-            freeMode: {
-                enabled: true,
-                sticky: false,
-                momentumBounce: false,
-            },
-            noSwiping: true,
-            noSwipingSelector: 'button',
-            autoHeight: true,
-            speed: 1000,
-            slidesPerView: "auto",
-            spaceBetween: 0,
-            watchSlidesProgress: true,
-            allowTouchMove: true,
-            on: {
-                slideChange: (swiper) => {
-                    document.querySelectorAll(`.nav-side>ol>li>button`).forEach(el => {
-                        el.classList.remove('active');
-                    });
-                    document.querySelector(`.page_p${swiper.realIndex + 1}`).classList.add('active');
-                },
-            }
-        });
-
-        pcSwiperPage.slideTo(0);
-        document.querySelector(`.page_p1`).classList.add('active');
-
-        for (let i = 0; i < 4; i++) {
-            addPageClick(i, pcSwiperPage);
-        }
-    };
-    pcSwiper();
-
-    document.querySelectorAll('.swiper-slide>.twof_map>div').forEach((el, idx) => {
-        el.addEventListener('click', () => {
-            let isRemove = false;
-            document.querySelectorAll('.swiper-slide>.twof_map>span').forEach((span, idx2) => {
-                if (span.classList.contains('active')) {
-                    if (idx2 === idx) {
-                        isRemove = true;
-                    } else {
-                        span.classList.remove('active');
-                    }
-                }
-            });
-            if (!isRemove) {
-                document.querySelectorAll('.swiper-slide>.twof_map>span')[idx].classList.add('active');
-            } else {
-                document.querySelectorAll('.swiper-slide>.twof_map>span')[idx].classList.remove('active');
-            }
-        });
-    });
-
+function media() {
     // media
     document.querySelector('.media_main>.menu_list>.video_btn').addEventListener('click', () => {
         document.querySelectorAll('.media>.subcontent').forEach(item => {
@@ -204,7 +148,9 @@ document.addEventListener("DOMContentLoaded", () => {
             submitRating();
         }
     });
+}
 
+function transportation() {
     // transportation
     document.querySelectorAll('.transportation .tab_list button')[0].classList.add('active');
     document.querySelectorAll('.transportation .content_body>div')[0].classList.add('display');
@@ -220,7 +166,9 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelectorAll('.transportation .tab_list button')[idx].classList.add('active');
         });
     });
+}
 
+function store() {
     // store
     document.querySelectorAll('.store .tab_list button')[0].classList.add('active');
     document.querySelectorAll('.store .content_body>div')[0].classList.add('display');
@@ -236,7 +184,112 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelectorAll('.store .tab_list button')[idx].classList.add('active');
         });
     });
-});
+}
+
+function floor() {
+    // floor
+
+    document.querySelector('.zone_type_list .park_btn').addEventListener('click', () => {
+        document.querySelector('.zone_type_list .park_btn').classList.add('active');
+        document.querySelector('.zone_type_list .floor_btn').classList.add('active');
+        document.querySelector('.park_area').style.display = 'block';
+        document.querySelector('.floor_area').style.display = 'none';
+        document.querySelector('.nav-side').style.display = 'none';
+    });
+
+    document.querySelector('.zone_type_list .floor_btn').addEventListener('click', () => {
+        document.querySelector('.zone_type_list .park_btn').classList.remove('active');
+        document.querySelector('.zone_type_list .floor_btn').classList.remove('active');
+        document.querySelector('.park_area').style.display = 'none';
+        document.querySelector('.floor_area').style.display = 'block';
+        document.querySelector('.nav-side').style.display = 'block';
+    });
+
+    document.querySelectorAll('.icon_list>div').forEach((el, idx) => {
+        el.addEventListener('click', () => {
+            if (el.classList.contains('active')) {
+                el.classList.remove('active');
+                document.querySelectorAll('div[class*=type]').forEach(item => {
+                    item.classList.remove('active');
+                });
+                return;
+            }
+            document.querySelectorAll('.icon_list>div').forEach(item => {
+                item.classList.remove('active');
+            });
+            el.classList.add('active');
+
+            document.querySelectorAll('div[class*=type]').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            document.querySelectorAll(`.type${idx + 1}`).forEach(item => {
+                item.classList.add('active');
+            });
+        });
+    });
+
+    let pcSwiperPage;
+    const pcSwiper = () => {
+        pcSwiperPage = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            touchReleaseOnEdges: true,
+            mousewheel: {
+                releaseOnEdges: true,
+            },
+            loop: false,
+            freeMode: {
+                enabled: true,
+                sticky: false,
+                momentumBounce: false,
+            },
+            noSwiping: true,
+            noSwipingSelector: 'button',
+            autoHeight: true,
+            speed: 1000,
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            watchSlidesProgress: true,
+            allowTouchMove: true,
+            on: {
+                slideChange: (swiper) => {
+                    document.querySelectorAll(`.nav-side>ol>li>button`).forEach(el => {
+                        el.classList.remove('active');
+                    });
+                    document.querySelector(`.page_p${swiper.realIndex + 1}`).classList.add('active');
+                },
+            }
+        });
+
+        pcSwiperPage.slideTo(0);
+        document.querySelector(`.page_p1`).classList.add('active');
+
+        for (let i = 0; i < 4; i++) {
+            addPageClick(i, pcSwiperPage);
+        }
+    };
+    pcSwiper();
+
+    document.querySelectorAll('.swiper-slide>.twof_map>div').forEach((el, idx) => {
+        el.addEventListener('click', () => {
+            let isRemove = false;
+            document.querySelectorAll('.swiper-slide>.twof_map>span').forEach((span, idx2) => {
+                if (span.classList.contains('active')) {
+                    if (idx2 === idx) {
+                        isRemove = true;
+                    } else {
+                        span.classList.remove('active');
+                    }
+                }
+            });
+            if (!isRemove) {
+                document.querySelectorAll('.swiper-slide>.twof_map>span')[idx].classList.add('active');
+            } else {
+                document.querySelectorAll('.swiper-slide>.twof_map>span')[idx].classList.remove('active');
+            }
+        });
+    });
+}
 
 const addPageClick = (index, swiper) => {
     document.querySelectorAll(`.page_p${index + 1}`).forEach(el => {
@@ -349,7 +402,20 @@ function modifyClass(page) {
     const activeContent = document.querySelector(`.${page}`);
     activeContent.classList.add('active');
 
-    if (page === 'media') {
+    if (page === 'floor') {
+        document.querySelector('.zone_type_list .park_btn').classList.remove('active');
+        document.querySelector('.zone_type_list .floor_btn').classList.remove('active');
+        document.querySelector('.park_area').style.display = 'none';
+        document.querySelector('.floor_area').style.display = 'block';
+        document.querySelector('.nav-side').style.display = 'block';
+
+        document.querySelectorAll('.icon_list>div').forEach(el => {
+            el.classList.remove('active');
+        });
+        document.querySelectorAll('div[class*=type]').forEach(item => {
+            item.classList.remove('active');
+        });
+    } else if (page === 'media') {
         document.querySelector('.media_main').classList.add('active');
         document.querySelector('.media_cast').classList.remove('active');
         document.querySelector('.media_picture').classList.remove('active');
