@@ -39,6 +39,13 @@ body.enBody .subcontent>.submit_btn.disabled {
   background-image: url(../img/media/submit_btn_disabled.png);
 }
 
+.media_cast .robot {
+  width: 462px;
+  height: 707px;
+  left: 342px;
+  top: 1203px;
+}
+
 .robot {
   background-image: url(../img/media/robot.png);
   background-repeat: no-repeat;
