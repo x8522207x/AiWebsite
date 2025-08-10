@@ -270,25 +270,36 @@ function floor() {
     };
     pcSwiper();
 
-    document.querySelectorAll('.swiper-slide>.twof_map>div').forEach((el, idx) => {
-        el.addEventListener('click', () => {
-            let isRemove = false;
-            document.querySelectorAll('.swiper-slide>.twof_map>span').forEach((span, idx2) => {
-                if (span.classList.contains('active')) {
-                    if (idx2 === idx) {
-                        isRemove = true;
+    const markObj = {
+        threef: [1],
+        twof: [1, 2, 3, 4, 5, 6, 7],
+        onef: [1, 2, 3, 4],
+        b1: [1, 2, 3, 4],
+    };
+    for (let mapClass in markObj) {
+        for (let id of markObj[mapClass]) {
+            document.querySelectorAll(`.swiper-slide>.${mapClass}_map .mark${id} polygon`).forEach(el => {
+                el.addEventListener('click', () => {
+                    let isRemove = false;
+                    document.querySelectorAll(`.swiper-slide>.${mapClass}_map>span`).forEach(span => {
+                        if (span.classList.contains('active')) {
+                            if (span.classList.contains(`${mapClass}_mark${id}`)) {
+                                isRemove = true;
+                            } else {
+                                span.classList.remove('active');
+                            }
+                        }
+                    });
+
+                    if (!isRemove) {
+                        document.querySelector(`.swiper-slide>.${mapClass}_map .${mapClass}_mark${id}`).classList.add('active');
                     } else {
-                        span.classList.remove('active');
+                        document.querySelector(`.swiper-slide>.${mapClass}_map .${mapClass}_mark${id}`).classList.remove('active');
                     }
-                }
+                });
             });
-            if (!isRemove) {
-                document.querySelectorAll('.swiper-slide>.twof_map>span')[idx].classList.add('active');
-            } else {
-                document.querySelectorAll('.swiper-slide>.twof_map>span')[idx].classList.remove('active');
-            }
-        });
-    });
+        }
+    }
 }
 
 const addPageClick = (index, swiper) => {
@@ -415,6 +426,18 @@ function modifyClass(page) {
         document.querySelectorAll('div[class*=type]').forEach(item => {
             item.classList.remove('active');
         });
+
+        const markObj = {
+            threef: [1],
+            twof: [1, 2, 3, 4, 5, 6, 7],
+            onef: [1, 2, 3, 4],
+            b1: [1, 2, 3, 4],
+        };
+        for (let mapClass in markObj) {
+            document.querySelectorAll(`.swiper-slide>.${mapClass}_map>span`).forEach(span => {
+                span.classList.remove('active');
+            });
+        }
     } else if (page === 'media') {
         document.querySelector('.media_main').classList.add('active');
         document.querySelector('.media_cast').classList.remove('active');
