@@ -253,6 +253,11 @@ body.enBody .return_menu {
   position: absolute;
 }
 
+body.enBody .video_btn1,
+body.enBody .video_btn3 {
+  display: none;
+}
+
 .video_btn1,
 .video_btn2,
 .video_btn3 {
@@ -268,6 +273,10 @@ body.enBody .return_menu {
   background-image: url(../img/media/screenshot1.png);
   left: 301px;
   top: 1472px;
+}
+
+body.enBody .video_btn2 {
+  background-image: url(../img/media/screenshot1.png);
 }
 
 .video_btn2 {

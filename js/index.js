@@ -55,10 +55,17 @@ function media() {
             item.classList.remove('active');
         });
         document.querySelector('.media>.subcontent.media_video').classList.add('active');
-        document.querySelector('.media .media_video .video').innerHTML = `
-        <iframe src="https://drive.google.com/file/d/1M1CDb9jumA5jnSQQh46pwgDKTStzhPyl/preview" width="1080" height="606.7" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture" 
-        allowfullscreen></iframe>
-        `;
+        if (localStorage.getItem('lang') === 'zh-TW') {
+            document.querySelector('.media .media_video .video').innerHTML = `
+            <iframe src="https://drive.google.com/file/d/1M1CDb9jumA5jnSQQh46pwgDKTStzhPyl/preview" width="1080" height="606.7" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+            `;
+        } else {
+            document.querySelector('.media .media_video .video').innerHTML = `
+            <iframe src="https://drive.google.com/file/d/1JzznlnEuKEF6w86-5PLOfSNmPfGJUJY-/preview" width="1080" height="606.7" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+            `;
+        }
     });
 
     document.querySelector('.media .media_video .return_menu').addEventListener('click', () => {
@@ -66,11 +73,11 @@ function media() {
             item.classList.remove('active');
         });
         document.querySelector('.media>.subcontent.media_main').classList.add('active');
-        document.querySelector('.media .media_video .video').children[0].remove();
+        document.querySelector('.media .media_video .video').children[0]?.remove();
     });
 
     document.querySelector('.media .media_video .video_btn1').addEventListener('click', () => {
-        document.querySelector('.media .media_video .video').children[0].remove();
+        document.querySelector('.media .media_video .video').children[0]?.remove();
         document.querySelector('.media .media_video .video').innerHTML = `
         <iframe src="https://drive.google.com/file/d/1M1CDb9jumA5jnSQQh46pwgDKTStzhPyl/preview" width="1080" height="606.7" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture" 
         allowfullscreen></iframe>
@@ -78,7 +85,7 @@ function media() {
     });
 
     document.querySelector('.media .media_video .video_btn2').addEventListener('click', () => {
-        document.querySelector('.media .media_video .video').children[0].remove();
+        document.querySelector('.media .media_video .video').children[0]?.remove();
         document.querySelector('.media .media_video .video').innerHTML = `
         <iframe src="https://drive.google.com/file/d/1zptwJoUnJTDU2ut0JKRSoMl3fwsXqRO8/preview" width="1080" height="606.7" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture" 
         allowfullscreen></iframe>
@@ -86,7 +93,7 @@ function media() {
     });
 
     document.querySelector('.media .media_video .video_btn3').addEventListener('click', () => {
-        document.querySelector('.media .media_video .video').children[0].remove();
+        document.querySelector('.media .media_video .video').children[0]?.remove();
         document.querySelector('.media .media_video .video').innerHTML = `
         <iframe src="https://drive.google.com/file/d/14awtPiDdC2ep5oADcay2sZy4RTwRnS-l/preview" width="1080" height="606.7" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture" 
         allowfullscreen></iframe>
@@ -341,6 +348,11 @@ function checkBtnClass(lang) {
           frameborder="0"
         ></iframe>
         `;
+
+        document.querySelector('.media .media_video .video').innerHTML = `
+        <iframe src="https://drive.google.com/file/d/1M1CDb9jumA5jnSQQh46pwgDKTStzhPyl/preview" width="1080" height="606.7" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        `;
     } else {
         document.querySelector('body').classList.add('enBody');
         document.querySelectorAll('.zh-TW').forEach(item => {
@@ -368,6 +380,10 @@ function checkBtnClass(lang) {
           height="1400"
           frameborder="0"
         ></iframe>
+        `;
+        document.querySelector('.media .media_video .video').innerHTML = `
+        <iframe src="https://drive.google.com/file/d/1JzznlnEuKEF6w86-5PLOfSNmPfGJUJY-/preview" width="1080" height="606.7" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
         `;
     }
 }
@@ -454,6 +470,11 @@ function modifyClass(page) {
             frameborder="0"
             ></iframe>
             `;
+
+            document.querySelector('.media .media_video .video').innerHTML = `
+            <iframe src="https://drive.google.com/file/d/1M1CDb9jumA5jnSQQh46pwgDKTStzhPyl/preview" width="1080" height="606.7" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+            `;
         } else {
             document.querySelector('.media .media_picture').innerHTML = `
             <iframe
@@ -463,6 +484,11 @@ function modifyClass(page) {
             height="1400"
             frameborder="0"
             ></iframe>
+            `;
+
+            document.querySelector('.media .media_video .video').innerHTML = `
+            <iframe src="https://drive.google.com/file/d/1JzznlnEuKEF6w86-5PLOfSNmPfGJUJY-/preview" width="1080" height="606.7" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
             `;
         }
     } else if (page === 'ai') {
