@@ -1,3 +1,14 @@
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(10px);
+    /* 下移 10px */
+  }
+}
+
 body.enBody .floor_title {
   background-image: url(../img/floor/floor_title_en.png);
 }
@@ -649,6 +660,7 @@ body.enBody .icon_list>.icon_btn12 {
   width: 89px;
   height: 100px;
   display: none;
+  animation: bounce 0.8s infinite alternate;
 }
 
 .type1.active,

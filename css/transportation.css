@@ -450,9 +450,10 @@ body.enBody .drive_area .block:last-of-type {
 
 .drive_area .block {
   display: flex;
-  margin-left: 50px;
   justify-content: flex-start;
   align-items: baseline;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .drive_area .direction {
