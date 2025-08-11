@@ -111,6 +111,10 @@ function media() {
         document.querySelectorAll('.media>.subcontent').forEach(item => {
             item.classList.remove('active');
         });
+        document.querySelectorAll('.media>.media_cast .grade>div').forEach(item => {
+            item.classList.remove('active');
+        });
+        document.querySelector('.submit_btn').classList.add('disabled');
         document.querySelector('.media>.subcontent.media_cast').classList.add('active');
     });
 
@@ -284,9 +288,15 @@ function floor() {
         b1: [1, 2, 3, 4],
     };
     for (let mapClass in markObj) {
+        document.querySelector(`.${mapClass}_map`).addEventListener('click', () => {
+            document.querySelectorAll(`.swiper-slide>.${mapClass}_map>span`).forEach(span => {
+                span.classList.remove('active');
+            });
+        });
         for (let id of markObj[mapClass]) {
             document.querySelectorAll(`.swiper-slide>.${mapClass}_map .mark${id} polygon`).forEach(el => {
-                el.addEventListener('click', () => {
+                el.addEventListener('click', (event) => {
+                    event.stopPropagation();
                     let isRemove = false;
                     document.querySelectorAll(`.swiper-slide>.${mapClass}_map>span`).forEach(span => {
                         if (span.classList.contains('active')) {

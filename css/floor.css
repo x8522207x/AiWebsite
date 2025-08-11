@@ -94,7 +94,7 @@ body.enBody .floor_title {
   overflow: hidden;
   display: flex;
   box-sizing: border-box;
-  top: 1004px;
+  top: 954px;
   position: absolute;
 }
 
@@ -424,10 +424,10 @@ body.enBody .swiper-slide>.b1_map>.mark4 {
 }
 
 .swiper-slide>.b1_map>.mark4 {
-  top: 218px;
-  left: 530px;
-  width: 105.5px;
-  height: 49px;
+  top: 413px;
+  left: 454px;
+  width: 119.52px;
+  height: 66.62px;
 }
 
 .swiper-slide>.b1_map>.b1_mark4 {
@@ -478,13 +478,12 @@ body.enBody .icon_list>div.active>.name {
 }
 
 body.enBody .icon_list>.icon_btn1 {
-  left: 105px;
-  top: 570px;
+  left: 28px;
 }
 
 .icon_list>.icon_btn1 {
-  left: 130px;
-  top: 600px;
+  left: 30px;
+  top: 570px;
 }
 
 .icon_list>.icon_btn1>.icon {
@@ -494,12 +493,12 @@ body.enBody .icon_list>.icon_btn1 {
 }
 
 body.enBody .icon_list>.icon_btn2 {
-  top: 570px;
+  left: 218px;
 }
 
 .icon_list>.icon_btn2 {
-  left: 302px;
-  top: 600px;
+  left: 203px;
+  top: 570px;
 }
 
 .icon_list>.icon_btn2>.icon {
@@ -509,13 +508,12 @@ body.enBody .icon_list>.icon_btn2 {
 }
 
 body.enBody .icon_list>.icon_btn3 {
-  left: 530px;
-  top: 570px;
+  left: 437px;
 }
 
 .icon_list>.icon_btn3 {
-  left: 515px;
-  top: 600px;
+  left: 427px;
+  top: 570px;
 }
 
 .icon_list>.icon_btn3>.icon {
@@ -525,12 +523,12 @@ body.enBody .icon_list>.icon_btn3 {
 }
 
 body.enBody .icon_list>.icon_btn4 {
-  top: 570px;
+  left: 604px;
 }
 
 .icon_list>.icon_btn4 {
-  left: 678px;
-  top: 600px;
+  left: 601px;
+  top: 570px;
 }
 
 .icon_list>.icon_btn4>.icon {
@@ -540,13 +538,12 @@ body.enBody .icon_list>.icon_btn4 {
 }
 
 body.enBody .icon_list>.icon_btn5 {
-  left: 850px;
-  top: 570px;
+  left: 783px;
 }
 
 .icon_list>.icon_btn5 {
-  left: 841px;
-  top: 600px;
+  left: 774px;
+  top: 570px;
 }
 
 .icon_list>.icon_btn5>.icon {
@@ -555,9 +552,14 @@ body.enBody .icon_list>.icon_btn5 {
   height: 88px;
 }
 
+body.enBody .icon_list>.icon_btn6 {
+  top: 755px;
+  left: 41px;
+}
+
 .icon_list>.icon_btn6 {
-  left: 130px;
-  top: 757px;
+  left: 32px;
+  top: 727px;
 }
 
 .icon_list>.icon_btn6>.icon {
@@ -566,9 +568,14 @@ body.enBody .icon_list>.icon_btn5 {
   height: 88px;
 }
 
+body.enBody .icon_list>.icon_btn7 {
+  top: 755px;
+  left: 247px;
+}
+
 .icon_list>.icon_btn7 {
-  left: 302px;
-  top: 757px;
+  left: 233px;
+  top: 727px;
 }
 
 .icon_list>.icon_btn7>.icon {
@@ -577,9 +584,14 @@ body.enBody .icon_list>.icon_btn5 {
   height: 88px;
 }
 
+body.enBody .icon_list>.icon_btn8 {
+  top: 755px;
+  left: 451px;
+}
+
 .icon_list>.icon_btn8 {
-  left: 504px;
-  top: 757px;
+  left: 434px;
+  top: 727px;
 }
 
 .icon_list>.icon_btn8>.icon {
@@ -589,12 +601,13 @@ body.enBody .icon_list>.icon_btn5 {
 }
 
 body.enBody .icon_list>.icon_btn9 {
-  left: 695px;
+  top: 755px;
+  left: 625px;
 }
 
 .icon_list>.icon_btn9 {
-  left: 669px;
-  top: 757px;
+  left: 606px;
+  top: 727px;
 }
 
 .icon_list>.icon_btn9>.icon {
@@ -603,9 +616,14 @@ body.enBody .icon_list>.icon_btn9 {
   height: 88px;
 }
 
+body.enBody .icon_list>.icon_btn10 {
+  top: 755px;
+  left: 780px;
+}
+
 .icon_list>.icon_btn10 {
-  left: 832px;
-  top: 757px;
+  left: 778px;
+  top: 727px;
 }
 
 .icon_list>.icon_btn10>.icon {
@@ -615,12 +633,12 @@ body.enBody .icon_list>.icon_btn9 {
 }
 
 body.enBody .icon_list>.icon_btn11 {
-  top: 955px;
+  left: 952px;
 }
 
 .icon_list>.icon_btn11 {
-  left: 444px;
-  top: 914px;
+  left: 948px;
+  top: 570px;
 }
 
 .icon_list>.icon_btn11>.icon {
@@ -630,12 +648,13 @@ body.enBody .icon_list>.icon_btn11 {
 }
 
 body.enBody .icon_list>.icon_btn12 {
-  top: 955px;
+  top: 755px;
+  left: 949px;
 }
 
 .icon_list>.icon_btn12 {
-  left: 618px;
-  top: 914px;
+  left: 950px;
+  top: 727px;
 }
 
 .icon_list>.icon_btn12>.icon {
@@ -784,8 +803,8 @@ body.enBody .icon_list>.icon_btn12 {
 }
 
 .b1_map .type6.second {
-  left: 525px;
-  top: 140px;
+  left: 515px;
+  top: 295px;
 }
 
 .b1_map .type7 {

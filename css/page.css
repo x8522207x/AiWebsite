@@ -149,7 +149,8 @@ body.enBody .zh-TW-show,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+      margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .page_list {
@@ -245,7 +246,7 @@ body.enBody .zh-TW-show,
   height: 1525px;
   display: none;
   background: linear-gradient(to bottom, #F3F9F8 00%, #768B9E 100%);
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .transportation  .subcontent {
