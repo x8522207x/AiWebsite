@@ -239,13 +239,18 @@ body.enBody .dialog {
   top: 800px;
 }
 
-.media .media_video .video iframe {
+.media .media_video .video video {
+  display: none;
   position: relative;
   z-index: 1000;
 }
 
 body.enBody .return_menu {
   background-image: url(../img/media/return_menu_btn_en.png);
+}
+
+.media .media_video .video .active {
+  display: block;
 }
 
 .return_menu {
