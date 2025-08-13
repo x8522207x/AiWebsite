@@ -87,6 +87,16 @@ video {
   vertical-align: initial;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: none;
+}
+
 body {
   font-family: "Noto Serif TC", serif;
 }

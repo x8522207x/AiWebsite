@@ -343,7 +343,7 @@ function checkBtnClass(lang) {
           src="https://one.ubitus.ai/one/b264ed30-ff19-4138-998b-c02a96712761/"
           allow="microphone"
           width="1080"
-          height="1400"
+          height="1395"
           frameborder="0"
         ></iframe>
         `;
@@ -354,7 +354,7 @@ function checkBtnClass(lang) {
           src="https://d21r6tjqqrwvc1.cloudfront.net/zh/"
           allow="camera"
           width="1080"
-          height="1400"
+          height="1395"
           frameborder="0"
         ></iframe>
         `;
@@ -377,7 +377,7 @@ function checkBtnClass(lang) {
           src="https://one.ubitus.ai/one/339f4dd4-a0b7-4ae4-81da-13d075c57b99/"
           allow="microphone"
           width="1080"
-          height="1400"
+          height="1395"
           frameborder="0"
         ></iframe>
         `;
@@ -387,7 +387,7 @@ function checkBtnClass(lang) {
           src="https://d21r6tjqqrwvc1.cloudfront.net/en/"
           allow="camera"
           width="1080"
-          height="1400"
+          height="1395"
           frameborder="0"
         ></iframe>
         `;
@@ -476,7 +476,7 @@ function modifyClass(page) {
             src="https://d21r6tjqqrwvc1.cloudfront.net/zh/"
             allow="camera"
             width="1080"
-            height="1400"
+            height="1395"
             frameborder="0"
             ></iframe>
             `;
@@ -491,7 +491,7 @@ function modifyClass(page) {
             src="https://d21r6tjqqrwvc1.cloudfront.net/en/"
             allow="camera"
             width="1080"
-            height="1400"
+            height="1395"
             frameborder="0"
             ></iframe>
             `;
@@ -509,7 +509,7 @@ function modifyClass(page) {
                 src="https://one.ubitus.ai/one/b264ed30-ff19-4138-998b-c02a96712761/"
                 allow="microphone"
                 width="1080"
-                height="1400"
+                height="1395"
                 frameborder="0"
                 ></iframe>
             `;
@@ -519,7 +519,7 @@ function modifyClass(page) {
                 src="https://one.ubitus.ai/one/339f4dd4-a0b7-4ae4-81da-13d075c57b99/"
                 allow="microphone"
                 width="1080"
-                height="1400"
+                height="1395"
                 frameborder="0"
                 ></iframe>
             `;
