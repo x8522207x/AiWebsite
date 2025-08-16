@@ -53,20 +53,23 @@ function media() {
             item.classList.remove('active');
         });
         document.querySelector('.media>.subcontent.media_video').classList.add('active');
-        if (localStorage.getItem('lang') === 'zh-TW') {
-            const video = document.querySelector('.media>.subcontent.media_video .video_1');
-            video.classList.add('active');
-            video.pause();
-            video.currentTime = 0;
-        } else {
-            const video = document.querySelector('.media>.subcontent.media_video .video_2_en');
-            video.classList.add('active');
-            video.pause();
-            video.currentTime = 0;
+        let selector = '.media>.subcontent.media_video .video_1';
+        if (localStorage.getItem('lang') === 'en') {
+            selector = '.media>.subcontent.media_video .video_2_en';
+        }
+        const video = document.querySelector(selector);
+        video.classList.add('active');
+        video.currentTime = 0;
+        video.play();
+        document.querySelector('.title').style.height = '184px';
+        document.querySelector('.title').style.backgroundImage = 'url("./img/media/media_video_title.png")';
+        if (localStorage.getItem('lang') === 'en') {
+            document.querySelector('.title').style.backgroundImage = 'url("./img/media/media_video_title_en.png")';
         }
     });
 
     document.querySelector('.media .media_video .return_menu').addEventListener('click', () => {
+        document.querySelector('.title').style.cssText = "";
         document.querySelectorAll('.media>.subcontent').forEach(item => {
             item.classList.remove('active');
         });
@@ -86,8 +89,8 @@ function media() {
         });
         const video = document.querySelector('.media>.subcontent.media_video .video_1');
         video.classList.add('active');
-        video.pause();
         video.currentTime = 0;
+        video.play();
     });
 
     document.querySelectorAll('.video video').forEach((video) => {
@@ -106,10 +109,14 @@ function media() {
             item.pause();
             item.currentTime = 0;
         });
-        const video = document.querySelector('.media>.subcontent.media_video .video_2');
+        let selector = '.media>.subcontent.media_video .video_2';
+        if (localStorage.getItem('lang') === 'en') {
+            selector = '.media>.subcontent.media_video .video_2_en';
+        }
+        const video = document.querySelector(selector);
         video.classList.add('active');
-        video.pause();
         video.currentTime = 0;
+        video.play();
     });
 
     document.querySelector('.media .media_video .video_btn3').addEventListener('click', () => {
@@ -120,8 +127,8 @@ function media() {
         });
         const video = document.querySelector('.media>.subcontent.media_video .video_3');
         video.classList.add('active');
-        video.pause();
         video.currentTime = 0;
+        video.play();
     });
 
     document.querySelector('.media_main>.menu_list>.picture_btn').addEventListener('click', () => {
@@ -129,6 +136,8 @@ function media() {
             item.classList.remove('active');
         });
         document.querySelector('.media>.subcontent.media_picture').classList.add('active');
+        document.querySelector('.media_title').style.display = 'none';
+        document.querySelector('.media.content').style.height = '1665px';
     });
 
     document.querySelector('.media_main>.menu_list>.cast_btn').addEventListener('click', () => {
@@ -140,6 +149,11 @@ function media() {
         });
         document.querySelector('.submit_btn').classList.add('disabled');
         document.querySelector('.media>.subcontent.media_cast').classList.add('active');
+        document.querySelector('.title').style.height = '184px';
+        document.querySelector('.title').style.backgroundImage = 'url("./img/media/media_cast_title.png")';
+        if (localStorage.getItem('lang') === 'en') {
+            document.querySelector('.title').style.backgroundImage = 'url("./img/media/media_cast_title_en.png")';
+        }
     });
 
     document.querySelector('.subcontent>.submit_btn').classList.add('disabled');
@@ -358,6 +372,7 @@ function checkBtnClass(lang) {
         item.pause();
         item.currentTime = 0;
     });
+
     if (lang === 'zh-TW') {
         document.querySelector('body').classList.remove('enBody');
         document.querySelectorAll('.zh-TW').forEach(item => {
@@ -372,12 +387,20 @@ function checkBtnClass(lang) {
           src="https://one.ubitus.ai/one/b264ed30-ff19-4138-998b-c02a96712761/"
           allow="microphone"
           width="1080"
-          height="1395"
+          height="1540"
           frameborder="0"
         ></iframe>
         `;
 
         document.querySelector('.media>.subcontent.media_video .video_1').classList.add('active');
+        if (document.querySelector('.media_video').classList.contains('active') && document.querySelector('.media').classList.contains('active')) {
+            document.querySelector('.media>.subcontent.media_video .video_1').play();
+            document.querySelector('.title').style.backgroundImage = 'url("./img/media/media_video_title.png")';
+        }
+
+        if (document.querySelector('.media_cast').classList.contains('active') && document.querySelector('.media').classList.contains('active')) {
+            document.querySelector('.title').style.backgroundImage = 'url("./img/media/media_cast_title.png")';
+        }
 
         document.querySelector('.media .media_picture').children[0].remove();
         document.querySelector('.media .media_picture').innerHTML = `
@@ -385,7 +408,7 @@ function checkBtnClass(lang) {
           src="https://d21r6tjqqrwvc1.cloudfront.net/zh/"
           allow="camera"
           width="1080"
-          height="1395"
+          height="1540"
           frameborder="0"
         ></iframe>
         `;
@@ -403,19 +426,27 @@ function checkBtnClass(lang) {
           src="https://one.ubitus.ai/one/339f4dd4-a0b7-4ae4-81da-13d075c57b99/"
           allow="microphone"
           width="1080"
-          height="1395"
+          height="1540"
           frameborder="0"
         ></iframe>
         `;
 
         document.querySelector('.media>.subcontent.media_video .video_2_en').classList.add('active');
+        if (document.querySelector('.media_video').classList.contains('active') && document.querySelector('.media').classList.contains('active')) {
+            document.querySelector('.media>.subcontent.media_video .video_2_en').play();
+            document.querySelector('.title').style.backgroundImage = 'url("./img/media/media_video_title_en.png")';
+        }
+
+        if (document.querySelector('.media_cast').classList.contains('active') && document.querySelector('.media').classList.contains('active')) {
+            document.querySelector('.title').style.backgroundImage = 'url("./img/media/media_cast_title_en.png")';
+        }
         document.querySelector('.media .media_picture').children[0].remove();
         document.querySelector('.media .media_picture').innerHTML = `
         <iframe
           src="https://d21r6tjqqrwvc1.cloudfront.net/en/"
           allow="camera"
           width="1080"
-          height="1395"
+          height="1540"
           frameborder="0"
         ></iframe>
         `;
@@ -442,6 +473,9 @@ function modifyClass(page) {
         title.classList.remove(title.classList[1]);
     }
     title.classList.add(`${page}_title`);
+    title.style.cssText = "";
+    title.style.display = 'block';
+    document.querySelector('.media.content').style.cssText = "";
 
     const pageList = document.querySelectorAll('.page_list>div');
     pageList.forEach(pageItem => {
@@ -500,28 +534,29 @@ function modifyClass(page) {
         document.querySelector('.media_picture').classList.remove('active');
         document.querySelector('.media_video').classList.remove('active');
         document.querySelector('.media .media_picture').children[0].remove();
-        if (localStorage.getItem('lang') === 'zh-TW') {
-            document.querySelector('.media .media_picture').innerHTML = `
+
+        document.querySelector('.media .media_picture').innerHTML = `
             <iframe
             src="https://d21r6tjqqrwvc1.cloudfront.net/zh/"
             allow="camera"
             width="1080"
-            height="1395"
+            height="1540"
             frameborder="0"
             ></iframe>
-            `;
-        } else {
+        `;
+        if (localStorage.getItem('lang') === 'en') {
             document.querySelector('.media .media_picture').innerHTML = `
             <iframe
             src="https://d21r6tjqqrwvc1.cloudfront.net/en/"
             allow="camera"
             width="1080"
-            height="1395"
+            height="1540"
             frameborder="0"
             ></iframe>
             `;
         }
     } else if (page === 'ai') {
+        document.querySelector('.title').style.display = 'none';
         document.querySelector('.ai .subcontent').children[0].remove();
         if (localStorage.getItem('lang') === 'zh-TW') {
             document.querySelector('.ai .subcontent').innerHTML = `
@@ -529,7 +564,7 @@ function modifyClass(page) {
                 src="https://one.ubitus.ai/one/b264ed30-ff19-4138-998b-c02a96712761/"
                 allow="microphone"
                 width="1080"
-                height="1395"
+                height="1540"
                 frameborder="0"
                 ></iframe>
             `;
@@ -539,7 +574,7 @@ function modifyClass(page) {
                 src="https://one.ubitus.ai/one/339f4dd4-a0b7-4ae4-81da-13d075c57b99/"
                 allow="microphone"
                 width="1080"
-                height="1395"
+                height="1540"
                 frameborder="0"
                 ></iframe>
             `;

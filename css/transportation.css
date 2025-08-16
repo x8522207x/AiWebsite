@@ -17,8 +17,7 @@ body.enBody .transportation_title {
 }
 
 body.enBody .transportation .tab_list {
-  width: 662px;
-  flex-wrap: wrap;
+  width: 1021px;
   justify-content: center;
 }
 
@@ -28,13 +27,18 @@ body.enBody .transportation .tab_list {
   align-items: center;
 }
 
+body.enBody .transportation .tab_list>button:not(:first-of-type) {
+    margin-left: 25px;
+}
+
 .transportation .tab_list>button:not(:first-of-type) {
   margin-left: 30px;
 }
 
 body.enBody .longBusTab {
   background-image: url(../img/transportation/long_bus_tab_en.png);
-  width: 460px;
+  width: 395.2px;
+  height: 88px;
 }
 
 .longBusTab {
@@ -42,8 +46,8 @@ body.enBody .longBusTab {
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100px;
-  width: 268px;
+  height: 90px;
+  width: 266px;
 }
 
 body.enBody .longBusTab.active {
@@ -56,6 +60,8 @@ body.enBody .longBusTab.active {
 
 body.enBody .mrtTab {
   background-image: url(../img/transportation/mrt_tab_en.png);
+  height: 88px;
+  width: 166px;
 }
 
 .mrtTab {
@@ -63,8 +69,8 @@ body.enBody .mrtTab {
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100px;
-  width: 160px;
+  height: 90px;
+  width: 171px;
 }
 
 body.enBody .mrtTab.active {
@@ -77,6 +83,8 @@ body.enBody .mrtTab.active {
 
 body.enBody .shortBusTab {
   background-image: url(../img/transportation/short_bus_tab_en.png);
+  height: 88px;
+  width: 160px;
 }
 
 .shortBusTab {
@@ -84,8 +92,8 @@ body.enBody .shortBusTab {
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100px;
-  width: 160px;
+  height: 90px;
+  width: 176px;
 }
 
 body.enBody .shortBusTab.active {
@@ -98,7 +106,8 @@ body.enBody .shortBusTab.active {
 
 body.enBody .driveTab {
   background-image: url(../img/transportation/drive_tab_en.png);
-  width: 190px;
+  width: 225px;
+  height: 88px;
 }
 
 .driveTab {
@@ -106,8 +115,8 @@ body.enBody .driveTab {
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100px;
-  width: 160px;
+  height: 90px;
+  width: 260px;
 }
 
 body.enBody .driveTab.active {
@@ -136,7 +145,7 @@ body.enBody .content_body {
 }
 
 body.enBody .long_bus_area .table_container {
-  max-height: 510px;
+  max-height: 610px;
 }
 
 .long_bus_area .table_container {
@@ -179,7 +188,8 @@ body.enBody .long_bus_area .table_container {
   vertical-align: middle;
   font-size: 24px;
   font-weight: bold;
-  border: 1px solid #B7B7B7;
+  border: 1px solid #03182C;
+  background-color: #F3F9F8;
 }
 
 body.enBody .long_bus_area .desc {
@@ -203,14 +213,14 @@ body.enBody .long_bus_area .desc {
 
 body.enBody .mrt_area .table_container {
   width: 959px;
-  max-height: 570px;
+  max-height: 750px;
   border-collapse: collapse;
   overflow-y: scroll;
 }
 
 .mrt_area .table_container {
   width: 997px;
-  height: 691px;
+  max-height: 691px;
   border-collapse: collapse;
 }
 
@@ -296,7 +306,11 @@ body.enBody .mrt_area .table-metro .y19 {
 
 .mrt_area .table-metro tbody td,
 .mrt_area .table-metro tbody th {
-  border: 1px solid #B7B7B7;
+  border: 1px solid #03182C;
+}
+
+.mrt_area .table-metro tbody td {
+  background-color: #F3F9F8;
 }
 
 body.enBody .mrt_area .table-metro tbody tr td:first-of-type {
@@ -332,7 +346,7 @@ body.enBody .mrt_area .table-metro tbody tr td:first-of-type {
 }
 
 body.enBody .short_bus_area .table_container {
-  max-height: 573px;
+  max-height: 750px;
   overflow-y: scroll;
 }
 
@@ -426,17 +440,19 @@ body.enBody .short_bus_area table tbody td.name_6 {
   vertical-align: middle;
   font-size: 24px;
   font-weight: bold;
-  border: 1px solid #B7B7B7;
+  border: 1px solid #0E3963;
+  background-color: #F3F9F8;
 }
 
 body.enBody .drive_area .totalBlock {
-  max-height: 588px;
+  max-height: 750px;
   overflow-y: scroll;
 }
 
 .drive_area .totalBlock {
   display: flex;
   flex-direction: column;
+  color: #FFFFFF;
 }
 
 body.enBody .drive_area .block {

@@ -19,7 +19,7 @@ body.enBody .store_title {
   background-size: contain;
   background-repeat: no-repeat;
   width: 809px;
-  height: 638px;
+  aspect-ratio: 139 / 92;
   margin-top: 30px;
 }
 
@@ -30,12 +30,15 @@ body.enBody .store .tab_list {
 }
 
 .store .tab_list {
-  margin-top: 50px;
   display: flex;
   align-items: center;
   gap: 30px;
+  margin-top: 50px;
 }
 
+.store .content_body {
+  height: 670px;
+}
 
 body.enBody .foodTab {
   background-image: url(../img/store/food_btn.png);

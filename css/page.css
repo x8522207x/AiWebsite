@@ -159,8 +159,8 @@ body.enBody .zh-TW-show,
   display: flex;
   justify-content: space-between;
   align-items: center;
-      margin-top: 10px;
-    margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .page_list {
@@ -252,14 +252,35 @@ body.enBody .zh-TW-show,
   background-image: url(../img/icon/english_active.png);
 }
 
+.ai.content {
+  height: 1665px;
+}
+
+.media.content {
+  height: auto;
+}
+
+.media_main {
+  height: 1411px;
+}
+
+.media_video,
+.media_cast {
+  height: 1367px;
+}
+
 .content {
-  height: 1525px;
+  height: 1540px;
   display: none;
   background: linear-gradient(to bottom, #F3F9F8 00%, #768B9E 100%);
   padding-top: 10px;
 }
 
-.transportation  .subcontent {
+.transportation {
+  font-family: "Noto Serif", serif;
+}
+
+.transportation .subcontent {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
