@@ -28,7 +28,7 @@ body.enBody .transportation .tab_list {
 }
 
 body.enBody .transportation .tab_list>button:not(:first-of-type) {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .transportation .tab_list>button:not(:first-of-type) {
@@ -153,10 +153,13 @@ body.enBody .long_bus_area .table_container {
   overflow-y: scroll;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 .long_bus_area table {
   width: 997px;
   height: 691px;
-  border-collapse: collapse;
   text-align: center;
 }
 
