@@ -584,29 +584,13 @@ body.enBody .icon_list>.icon_btn7 {
   height: 88px;
 }
 
-body.enBody .icon_list>.icon_btn8 {
-  top: 755px;
-  left: 451px;
-}
-
-.icon_list>.icon_btn8 {
-  left: 434px;
-  top: 727px;
-}
-
-.icon_list>.icon_btn8>.icon {
-  background-image: url(../img/floor/icon_btn8.png);
-  width: 99px;
-  height: 88px;
-}
-
 body.enBody .icon_list>.icon_btn9 {
   top: 755px;
-  left: 625px;
+  left: 437px;
 }
 
 .icon_list>.icon_btn9 {
-  left: 606px;
+  left: 427px;
   top: 727px;
 }
 
@@ -618,11 +602,11 @@ body.enBody .icon_list>.icon_btn9 {
 
 body.enBody .icon_list>.icon_btn10 {
   top: 755px;
-  left: 780px;
+  left: 604px;
 }
 
 .icon_list>.icon_btn10 {
-  left: 778px;
+  left: 601px;
   top: 727px;
 }
 
@@ -649,11 +633,11 @@ body.enBody .icon_list>.icon_btn11 {
 
 body.enBody .icon_list>.icon_btn12 {
   top: 755px;
-  left: 949px;
+  left: 783px;
 }
 
 .icon_list>.icon_btn12 {
-  left: 950px;
+  left: 774px;
   top: 727px;
 }
 
@@ -670,7 +654,6 @@ body.enBody .icon_list>.icon_btn12 {
 .type5,
 .type6,
 .type7,
-.type8,
 .type9,
 .type10,
 .type11,
@@ -689,7 +672,6 @@ body.enBody .icon_list>.icon_btn12 {
 .type5.active,
 .type6.active,
 .type7.active,
-.type8.active,
 .type9.active,
 .type10.active,
 .type11.active,
@@ -810,11 +792,6 @@ body.enBody .icon_list>.icon_btn12 {
 .b1_map .type7 {
   left: 525px;
   top: 230px;
-}
-
-.b1_map .type8 {
-  left: 475px;
-  top: 340px;
 }
 
 .b1_map .type9 {
