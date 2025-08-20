@@ -272,9 +272,15 @@ function floor() {
                 item.classList.remove('active');
             });
 
-            document.querySelectorAll(`.type${idx + 1}`).forEach(item => {
-                item.classList.add('active');
-            });
+            if (idx < 7) {
+                document.querySelectorAll(`.type${idx + 1}`).forEach(item => {
+                    item.classList.add('active');
+                });
+            } else {
+                document.querySelectorAll(`.type${idx + 2}`).forEach(item => {
+                    item.classList.add('active');
+                });
+            }
         });
     });
 
