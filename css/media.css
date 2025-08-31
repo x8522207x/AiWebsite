@@ -236,7 +236,7 @@ body.enBody .dialog {
 .media .media_video .video {
   position: absolute;
   left: 0px;
-  top: 800px;
+  top: 584px;
 }
 
 .media .media_video .video video {
@@ -247,6 +247,8 @@ body.enBody .dialog {
 
 body.enBody .return_menu {
   background-image: url(../img/media/return_menu_btn_en.png);
+  width: 666px;
+  left: 207px;
 }
 
 .media .media_video .video .active {
@@ -258,10 +260,10 @@ body.enBody .return_menu {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
-  width: 420px;
-  height: 100px;
-  left: 330px;
-  top: 664px;
+  width: 350px;
+  height: 90px;
+  left: 370px;
+  top: 434px;
   position: absolute;
 }
 
@@ -284,7 +286,7 @@ body.enBody .video_btn3 {
 .video_btn1 {
   background-image: url(../img/media/screenshot1.png);
   left: 301px;
-  top: 1472px;
+  top: 1242px;
 }
 
 body.enBody .video_btn2 {
@@ -294,11 +296,11 @@ body.enBody .video_btn2 {
 .video_btn2 {
   background-image: url(../img/media/screenshot2.png);
   left: 481px;
-  top: 1472px;
+  top: 1242px;
 }
 
 .video_btn3 {
   background-image: url(../img/media/screenshot3.png);
   left: 661px;
-  top: 1472px;
+  top: 1242px;
 }

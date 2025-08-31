@@ -1,3 +1,24 @@
+/* 顯示 table_container 的 scrollbar 並美化 */
+.table_container {
+  overflow: auto !important;
+}
+
+/* 美化 scrollbar (可依需求調整) */
+.table_container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.table_container::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 4px;
+}
+
+.table_container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
 body.enBody .transportation_title {
   background-image: url(../img/transportation/transportation_title_en.png);
 }
@@ -145,11 +166,11 @@ body.enBody .content_body {
 }
 
 body.enBody .long_bus_area .table_container {
-  max-height: 610px;
+  max-height: 900px;
 }
 
 .long_bus_area .table_container {
-  max-height: 691px;
+  max-height: 1000px;
   overflow-y: scroll;
 }
 
@@ -216,14 +237,14 @@ body.enBody .long_bus_area .desc {
 
 body.enBody .mrt_area .table_container {
   width: 959px;
-  max-height: 750px;
+  max-height: 1017px;
   border-collapse: collapse;
   overflow-y: scroll;
 }
 
 .mrt_area .table_container {
   width: 997px;
-  max-height: 691px;
+  max-height: 729px;
   border-collapse: collapse;
 }
 
@@ -349,12 +370,12 @@ body.enBody .mrt_area .table-metro tbody tr td:first-of-type {
 }
 
 body.enBody .short_bus_area .table_container {
-  max-height: 750px;
+  max-height: 1017px;
   overflow-y: scroll;
 }
 
 .short_bus_area .table_container {
-  max-height: 691px;
+  max-height: 736px;
   border-collapse: collapse;
   text-align: center;
 }
@@ -447,46 +468,38 @@ body.enBody .short_bus_area table tbody td.name_6 {
   background-color: #F3F9F8;
 }
 
-body.enBody .drive_area .totalBlock {
-  max-height: 750px;
-  overflow-y: scroll;
-}
-
-.drive_area .totalBlock {
+.drive_area {
   display: flex;
-  flex-direction: column;
-  color: #FFFFFF;
-}
-
-body.enBody .drive_area .block {
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-body.enBody .drive_area .block:last-of-type {
-  margin-top: 40px;
+.drive_area div {
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.drive_area .block {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  margin-left: 50px;
-  margin-right: 50px;
+body.enBody .drive_area .sourthBlock {
+  background-image: url(../img/transportation/sourth_en.png);
+  height: 477px;
 }
 
-.drive_area .direction {
-  font-weight: bold;
-  font-size: 50px;
+.drive_area .sourthBlock {
+  background-image: url(../img/transportation/sourth.png);
+  width: 1020px;
+  height: 252px;
+  margin-bottom: 50px;
 }
 
-.drive_area .path {
-  font-weight: 400;
-  font-size: 40px;
-  margin-left: 30px;
-  line-height: 64px;
+body.enBody .drive_area .northBlock {
+  background-image: url(../img/transportation/north_en.png);
+  height: 437px;
 }
 
-.drive_area strong {
-  font-weight: bold;
+.drive_area .northBlock {
+  background-image: url(../img/transportation/north.png);
+  width: 1020px;
+  height: 268px;
 }
