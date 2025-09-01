@@ -160,13 +160,13 @@ body.enBody .content_body {
 
 .long_bus_area {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   flex-direction: column;
 }
 
 body.enBody .long_bus_area .table_container {
-  max-height: 900px;
+  max-height: 878px;
 }
 
 .long_bus_area .table_container {
@@ -185,6 +185,8 @@ table {
 }
 
 .long_bus_area table thead th {
+  border: 1px solid #03182C;
+  border-top-width: 0px;
   position: sticky;
   top: 0;
   width: 499px;
@@ -232,19 +234,19 @@ body.enBody .long_bus_area .desc {
 .mrt_area {
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: end;
 }
 
 body.enBody .mrt_area .table_container {
   width: 959px;
-  max-height: 1017px;
+  max-height: 982px;
   border-collapse: collapse;
   overflow-y: scroll;
 }
 
 .mrt_area .table_container {
   width: 997px;
-  max-height: 729px;
+  max-height: 730px;
   border-collapse: collapse;
 }
 
@@ -366,11 +368,11 @@ body.enBody .mrt_area .table-metro tbody tr td:first-of-type {
 .short_bus_area {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
 }
 
 body.enBody .short_bus_area .table_container {
-  max-height: 1017px;
+  max-height: 991px;
   overflow-y: scroll;
 }
 
@@ -394,7 +396,7 @@ body.enBody .short_bus_area table thead th.time {
 }
 
 body.enBody .short_bus_area table thead th.path {
-  width: 448px;
+  width: 449px;
 }
 
 .short_bus_area table thead th.path {
@@ -450,6 +452,7 @@ body.enBody .short_bus_area table tbody td.name_6 {
 }
 
 .short_bus_area table thead th {
+  border: 1px solid #03182C;
   height: 71px;
   background-color: #03182C;
   color: white;
@@ -502,4 +505,24 @@ body.enBody .drive_area .northBlock {
   background-image: url(../img/transportation/north.png);
   width: 1020px;
   height: 268px;
+}
+
+body.enBody .arrow {
+  display: block;
+  position: absolute;
+}
+
+.arrow {
+  display: none;
+  width: 32px;
+  height: 46px;
+  background-image: url(../img/transportation/arrow.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: bounce 0.8s infinite alternate;
+}
+
+.long_bus_area .arrow {
+  margin-bottom: 100px;
 }

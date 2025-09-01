@@ -215,6 +215,10 @@ function transportation() {
             document.querySelectorAll('.transportation .tab_list button')[idx].classList.add('active');
         });
     });
+
+    scrollDisapper('.long_bus_area .table_container', '.long_bus_area .arrow');
+    scrollDisapper('.mrt_area .table_container', '.mrt_area .arrow');
+    scrollDisapper('.short_bus_area .table_container', '.short_bus_area .arrow');
 }
 
 function store() {
@@ -364,6 +368,24 @@ function floor() {
         }
     }
 }
+
+const scrollDisapper = (containerEle, hideEle) => {
+    const container = document.querySelector(containerEle);
+    const target = document.querySelector(hideEle);
+
+    container.addEventListener('scroll', function () {
+        const scrollTop = container.scrollTop; // 已滾動的高度
+        const scrollHeight = container.scrollHeight; // 內容總高度
+        const clientHeight = container.clientHeight; // 可視高度
+
+        if (scrollTop + clientHeight >= scrollHeight) {
+            // 已經到最底部
+            target.style.display = 'none';
+        } else {
+            target.style.display = 'block';
+        }
+    });
+};
 
 const addPageClick = (index, swiper) => {
     document.querySelectorAll(`.page_p${index + 1}`).forEach(el => {
