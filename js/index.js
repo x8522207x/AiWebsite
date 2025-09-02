@@ -382,7 +382,7 @@ const scrollDisapper = (containerEle, hideEle) => {
             // 已經到最底部
             target.style.display = 'none';
         } else {
-            target.style.display = 'block';
+            target.style.display = '';
         }
     });
 };
@@ -402,6 +402,10 @@ function checkBtnClass(lang) {
         item.pause();
         item.currentTime = 0;
     });
+
+    document.querySelector('.long_bus_area .arrow').style.display = '';
+    document.querySelector('.mrt_area .arrow').style.display = '';
+    document.querySelector('.short_bus_area .arrow').style.display = '';
 
     if (lang === 'zh-TW') {
         document.querySelector('body').classList.remove('enBody');
