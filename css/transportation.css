@@ -27,6 +27,10 @@ body.enBody .transportation_title {
   background-image: url(../img/transportation/transportation_title.png);
 }
 
+body.enBody .transportation .map {
+   background-image: url(../img/transportation/map_en.png);
+}
+
 .transportation .map {
   background-image: url(../img/transportation/map.png);
   background-position: 50% 50%;

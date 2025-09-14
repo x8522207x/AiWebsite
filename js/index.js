@@ -137,7 +137,7 @@ function media() {
         });
         document.querySelector('.media>.subcontent.media_picture').classList.add('active');
         document.querySelector('.media_title').style.display = 'none';
-        document.querySelector('.media.content').style.height = '1895px';
+        document.querySelector('.media.content').style.height = '1900px';
     });
 
     document.querySelector('.media_main>.menu_list>.cast_btn').addEventListener('click', () => {
@@ -367,6 +367,36 @@ function floor() {
             });
         }
     }
+
+    document.querySelector(`.park_map`).addEventListener('click', () => {
+        document.querySelectorAll(`.park_area>.park_map>span`).forEach(span => {
+            span.classList.remove('active');
+        });
+    });
+
+    for (let id of [1, 2, 3, 4, 5]) {
+        document.querySelectorAll(`.park_area>.park_map .mark${id} .cls-1`).forEach(el => {
+            el.addEventListener('click', (event) => {
+                event.stopPropagation();
+                let isRemove = false;
+                document.querySelectorAll(`.park_area>.park_map>span`).forEach(span => {
+                    if (span.classList.contains('active')) {
+                        if (span.classList.contains(`park_mark${id}`)) {
+                            isRemove = true;
+                        } else {
+                            span.classList.remove('active');
+                        }
+                    }
+                });
+
+                if (!isRemove) {
+                    document.querySelector(`.park_area>.park_map .park_mark${id}`).classList.add('active');
+                } else {
+                    document.querySelector(`.park_area>.park_map .park_mark${id}`).classList.remove('active');
+                }
+            });
+        });
+    }
 }
 
 const scrollDisapper = (containerEle, hideEle) => {
@@ -418,11 +448,10 @@ function checkBtnClass(lang) {
         document.querySelector('.ai .subcontent').children[0].remove();
         document.querySelector('.ai .subcontent').innerHTML = `
         <iframe
-          src="https://one.ubitus.ai/one/b264ed30-ff19-4138-998b-c02a96712761/"
-          allow="microphone"
-          width="1080"
-          height="1731"
-          frameborder="0"
+            src="https://one.ubitus.ai/one/b264ed30-ff19-4138-998b-c02a96712761/"
+            allow="microphone"
+            width="1080"
+            height="1731"
         ></iframe>
         `;
 
@@ -439,11 +468,10 @@ function checkBtnClass(lang) {
         document.querySelector('.media .media_picture').children[0].remove();
         document.querySelector('.media .media_picture').innerHTML = `
         <iframe
-          src="https://d21r6tjqqrwvc1.cloudfront.net/zh/"
-          allow="camera"
-          width="1080"
-          height="1770"
-          frameborder="0"
+            src="https://d21r6tjqqrwvc1.cloudfront.net/zh/"
+            allow="camera"
+            width="1080"
+            height="1770"
         ></iframe>
         `;
     } else {
@@ -457,11 +485,10 @@ function checkBtnClass(lang) {
         document.querySelector('.ai .subcontent').children[0].remove();
         document.querySelector('.ai .subcontent').innerHTML = `
         <iframe
-          src="https://one.ubitus.ai/one/339f4dd4-a0b7-4ae4-81da-13d075c57b99/"
-          allow="microphone"
-          width="1080"
-          height="1731"
-          frameborder="0"
+            src="https://one.ubitus.ai/one/339f4dd4-a0b7-4ae4-81da-13d075c57b99/"
+            allow="microphone"
+            width="1080"
+            height="1731"
         ></iframe>
         `;
 
@@ -477,11 +504,10 @@ function checkBtnClass(lang) {
         document.querySelector('.media .media_picture').children[0].remove();
         document.querySelector('.media .media_picture').innerHTML = `
         <iframe
-          src="https://d21r6tjqqrwvc1.cloudfront.net/en/"
-          allow="camera"
-          width="1080"
-          height="1770"
-          frameborder="0"
+            src="https://d21r6tjqqrwvc1.cloudfront.net/en/"
+            allow="camera"
+            width="1080"
+            height="1770"
         ></iframe>
         `;
     }
@@ -571,21 +597,19 @@ function modifyClass(page) {
 
         document.querySelector('.media .media_picture').innerHTML = `
             <iframe
-            src="https://d21r6tjqqrwvc1.cloudfront.net/zh/"
-            allow="camera"
-            width="1080"
-            height="1770"
-            frameborder="0"
+                src="https://d21r6tjqqrwvc1.cloudfront.net/zh/"
+                allow="camera"
+                width="1080"
+                height="1770"
             ></iframe>
         `;
         if (localStorage.getItem('lang') === 'en') {
             document.querySelector('.media .media_picture').innerHTML = `
             <iframe
-            src="https://d21r6tjqqrwvc1.cloudfront.net/en/"
-            allow="camera"
-            width="1080"
-            height="1770"
-            frameborder="0"
+                src="https://d21r6tjqqrwvc1.cloudfront.net/en/"
+                allow="camera"
+                width="1080"
+                height="1770"
             ></iframe>
             `;
         }
@@ -595,21 +619,19 @@ function modifyClass(page) {
         if (localStorage.getItem('lang') === 'zh-TW') {
             document.querySelector('.ai .subcontent').innerHTML = `
                 <iframe
-                src="https://one.ubitus.ai/one/b264ed30-ff19-4138-998b-c02a96712761/"
-                allow="microphone"
-                width="1080"
-                height="1731"
-                frameborder="0"
+                    src="https://one.ubitus.ai/one/b264ed30-ff19-4138-998b-c02a96712761/"
+                    allow="microphone"
+                    width="1080"
+                    height="1731"
                 ></iframe>
             `;
         } else {
             document.querySelector('.ai .subcontent').innerHTML = `
                 <iframe
-                src="https://one.ubitus.ai/one/339f4dd4-a0b7-4ae4-81da-13d075c57b99/"
-                allow="microphone"
-                width="1080"
-                height="1731"
-                frameborder="0"
+                    src="https://one.ubitus.ai/one/339f4dd4-a0b7-4ae4-81da-13d075c57b99/"
+                    allow="microphone"
+                    width="1080"
+                    height="1731"
                 ></iframe>
             `;
         }

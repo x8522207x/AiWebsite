@@ -87,11 +87,6 @@ video {
   vertical-align: initial;
 }
 
-/* ::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-} */
-
 /* Firefox */
 * {
   scrollbar-width: none;
@@ -160,11 +155,11 @@ body.enBody .zh-TW-show,
 }
 
 .page_list .ai_page {
-  background-image: url(../img/icon/ai_page.svg);
+  background-image: url(../img/icon/ai_page.png);
 }
 
 .page_list .ai_page.active {
-  background-image: url(../img/icon/ai_page_active.svg);
+  background-image: url(../img/icon/ai_page_active.png);
 }
 
 .page_list .floor_page {
@@ -233,7 +228,7 @@ body.enBody .zh-TW-show,
 }
 
 .ai.content {
-  height: 1895px;
+  height: 1900px;
 }
 
 .media.content {

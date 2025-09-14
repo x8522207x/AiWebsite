@@ -14,17 +14,17 @@ body.enBody .store_title {
 }
 
 .store .map {
-  background-image: url(../img/transportation/map.png);
+  background-image: url(../img/store/map.png);
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 809px;
-  aspect-ratio: 139 / 92;
+  width: 1080px;
+  aspect-ratio: 1080 / 852;
   margin-top: 30px;
 }
 
 body.enBody .store .tab_list {
-  width: 640px;
+  width: 700px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -33,16 +33,24 @@ body.enBody .store .tab_list {
   display: flex;
   align-items: center;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+body.enBody .store .content_body {
+  height: 497px !important;
 }
 
 .store .content_body {
-  height: 670px;
+  height: 444px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body.enBody .foodTab {
-  background-image: url(../img/store/food_btn.png);
-  width: 160px;
+  background-image: url(../img/store/food_btn_en.png);
+  height: 90px;
+  width: 419.2px;
 }
 
 .foodTab {
@@ -50,60 +58,65 @@ body.enBody .foodTab {
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100px;
-  width: 160px;
+  height: 101px;
+  width: 266px;
 }
 
 body.enBody .foodTab.active {
-  background-image: url(../img/store/food_btn_active.png);
+  background-image: url(../img/store/food_btn_active_en.png);
 }
 
 .foodTab.active {
   background-image: url(../img/store/food_btn_active.png);
 }
 
-body.enBody .travelTab {
-  background-image: url(../img/store/travel_btn.png);
+body.enBody .parkTab {
+  background-image: url(../img/store/park_btn_en.png);
+  height: 90px;
+  width: 195.2px;
 }
 
-.travelTab {
-  background-image: url(../img/store/travel_btn.png);
+.parkTab {
+  background-image: url(../img/store/park_btn.png);
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100px;
-  width: 160px;
+  height: 101px;
+  width: 182px;
 }
 
-body.enBody .travelTab.active {
-  background-image: url(../img/store/travel_btn_active.png);
+body.enBody .parkTab.active {
+  background-image: url(../img/store/park_btn_active_en.png);
 }
 
-.travelTab.active {
-  background-image: url(../img/store/travel_btn_active.png);
+.parkTab.active {
+  background-image: url(../img/store/park_btn_active.png);
 }
 
-body.enBody .storeTab {
-  background-image: url(../img/store/store_btn.png);
+body.enBody .foodArea {
+  background-image: url(../img/store/food_area_en.png);
+  height: 497px;
 }
 
-.storeTab {
-  background-image: url(../img/store/store_btn.png);
+.foodArea {
+  background-image: url(../img/store/food_area.png);
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100px;
-  width: 260px;
+  height: 444px;
+  width: 1020px;
 }
 
-body.enBody .storeTab.active {
-  background-image: url(../img/store/store_btn_active.png);
+body.enBody .parkArea {
+  background-image: url(../img/store/park_area_en.png);
+  height: 497px;
 }
 
-.storeTab.active {
-  background-image: url(../img/store/store_btn_active.png);
+.parkArea {
+  background-image: url(../img/store/park_area.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 444px;
+  width: 1020px;
 }
-
-/* .store .tab_list>button:not(:first-of-type) {
-  margin-left: 30px;
-} */
