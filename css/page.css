@@ -109,6 +109,11 @@ ul {
   list-style: none;
 }
 
+.ai .subcontent,
+.media .media_picture {
+  line-height: 0;
+}
+
 .zh-TW-show,
 .content.active,
 .media_main.active,
