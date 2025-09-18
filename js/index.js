@@ -137,7 +137,7 @@ function media() {
         });
         document.querySelector('.media>.subcontent.media_picture').classList.add('active');
         document.querySelector('.media_title').style.display = 'none';
-        document.querySelector('.media.content').style.height = '1900px';
+        document.querySelector('.media.content').style.height = '1910px';
     });
 
     document.querySelector('.media_main>.menu_list>.cast_btn').addEventListener('click', () => {
@@ -315,9 +315,9 @@ function floor() {
                 item.classList.remove('active');
             });
 
-            if ([0, 1, 4, 11].includes(idx)) {
+            if ([0, 1, 4, 10, 11].includes(idx)) {
                 pcSwiperPage.slideTo(0);
-            } else if ([3, 7, 10].includes(idx)) {
+            } else if ([3, 7].includes(idx)) {
                 pcSwiperPage.slideTo(1);
             } else if ([2, 9].includes(idx)) {
                 pcSwiperPage.slideTo(2);
@@ -451,7 +451,7 @@ function checkBtnClass(lang) {
             src="https://one.ubitus.ai/one/b264ed30-ff19-4138-998b-c02a96712761/"
             allow="microphone"
             width="1080"
-            height="1731"
+            height="1741"
         ></iframe>
         `;
 
@@ -471,7 +471,7 @@ function checkBtnClass(lang) {
             src="https://d21r6tjqqrwvc1.cloudfront.net/zh/"
             allow="camera"
             width="1080"
-            height="1770"
+            height="1780"
         ></iframe>
         `;
     } else {
@@ -488,7 +488,7 @@ function checkBtnClass(lang) {
             src="https://one.ubitus.ai/one/339f4dd4-a0b7-4ae4-81da-13d075c57b99/"
             allow="microphone"
             width="1080"
-            height="1731"
+            height="1741"
         ></iframe>
         `;
 
@@ -507,7 +507,7 @@ function checkBtnClass(lang) {
             src="https://d21r6tjqqrwvc1.cloudfront.net/en/"
             allow="camera"
             width="1080"
-            height="1770"
+            height="1780"
         ></iframe>
         `;
     }
@@ -600,7 +600,7 @@ function modifyClass(page) {
                 src="https://d21r6tjqqrwvc1.cloudfront.net/zh/"
                 allow="camera"
                 width="1080"
-                height="1770"
+                height="1780"
             ></iframe>
         `;
         if (localStorage.getItem('lang') === 'en') {
@@ -609,7 +609,7 @@ function modifyClass(page) {
                 src="https://d21r6tjqqrwvc1.cloudfront.net/en/"
                 allow="camera"
                 width="1080"
-                height="1770"
+                height="1780"
             ></iframe>
             `;
         }
@@ -622,7 +622,7 @@ function modifyClass(page) {
                     src="https://one.ubitus.ai/one/b264ed30-ff19-4138-998b-c02a96712761/"
                     allow="microphone"
                     width="1080"
-                    height="1731"
+                    height="1741"
                 ></iframe>
             `;
         } else {
@@ -631,7 +631,7 @@ function modifyClass(page) {
                     src="https://one.ubitus.ai/one/339f4dd4-a0b7-4ae4-81da-13d075c57b99/"
                     allow="microphone"
                     width="1080"
-                    height="1731"
+                    height="1741"
                 ></iframe>
             `;
         }
