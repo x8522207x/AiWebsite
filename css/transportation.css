@@ -28,7 +28,7 @@ body.enBody .transportation_title {
 }
 
 body.enBody .transportation .map {
-   background-image: url(../img/transportation/map_en.png);
+  background-image: url(../img/transportation/map_en.png);
 }
 
 .transportation .map {
@@ -174,7 +174,7 @@ body.enBody .long_bus_area .table_container {
 }
 
 .long_bus_area .table_container {
-  max-height: 1000px;
+  max-height: 950px;
   overflow-y: scroll;
 }
 
@@ -188,17 +188,19 @@ table {
   text-align: center;
 }
 
+.long_bus_area table thead {
+  position: sticky;
+  top: 0;
+}
+
 .long_bus_area table thead th {
   border: 1px solid #03182C;
   border-top-width: 0px;
-  position: sticky;
-  top: 0;
   width: 499px;
   height: 71px;
   background-color: #03182C;
   font-size: 30px;
   font-weight: bold;
-  position: sticky;
   vertical-align: middle;
   text-align: center;
 }
@@ -209,6 +211,10 @@ table {
 
 .long_bus_area table thead .header2 {
   color: #6CCAC8;
+}
+
+.long_bus_area table thead .header3 {
+  color: #D35344;
 }
 
 .long_bus_area table tbody td {
@@ -529,4 +535,6 @@ body.enBody .arrow {
 
 .long_bus_area .arrow {
   margin-bottom: 100px;
+  display: block;
+  position: absolute;
 }

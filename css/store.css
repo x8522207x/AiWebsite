@@ -13,6 +13,10 @@ body.enBody .store_title {
   justify-content: center;
 }
 
+body.enBody .store .map {
+  background-image: url(../img/store/map_en.png);
+}
+
 .store .map {
   background-image: url(../img/store/map.png);
   background-position: 50% 50%;
@@ -93,18 +97,40 @@ body.enBody .parkTab.active {
   background-image: url(../img/store/park_btn_active.png);
 }
 
-body.enBody .foodArea {
-  background-image: url(../img/store/food_area_en.png);
-  height: 497px;
-}
-
 .foodArea {
   background-image: url(../img/store/food_area.png);
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 444px;
+  height: 465px;
   width: 1020px;
+  justify-content: center;
+  align-items: center;
+}
+
+.foodArea .desc {
+  position: relative;
+  width: 940px;
+  height: 395px;
+  font-size: 48px;
+  line-height: 82px;
+  overflow-y: scroll;
+  font-weight: 400;
+}
+
+body.enBody .foodArea .desc {
+  font-size: 35px;
+  line-height: 50px;
+}
+
+.foodArea .desc strong {
+  font-weight: 700;
+}
+
+.foodArea .arrow {
+  margin-bottom: -350px;
+  display: block;
+  position: absolute;
 }
 
 body.enBody .parkArea {

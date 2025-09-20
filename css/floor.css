@@ -418,11 +418,6 @@ body.enBody .swiper-slide>.b1_map>.mark3 {
   left: 365px;
 }
 
-body.enBody .swiper-slide>.b1_map>.mark4 {
-  left: 531px;
-  top: 218px;
-}
-
 .swiper-slide>.b1_map>.mark4 {
   top: 413px;
   left: 454px;
@@ -874,42 +869,51 @@ body.enBody .icon_list>.icon_btn12 {
 
 .park_map .mark1 {
   position: absolute;
-  height: 46.7px;
-  width: 83.15px;
-  left: 530px;
-  top: 565px;
+  height: auto;
+  width: 145.15px;
+  left: 428px;
+  top: 567px;
 }
 
 .park_map .mark2 {
   position: absolute;
-  height: 259.36px;
-  width: 238.27px;
-  left: 602px;
-  top: 133px;
+  height: auto;
+  width: 87.27px;
+  left: 664px;
+  top: 244px;
+  z-index: 2;
 }
 
 .park_map .mark3 {
   position: absolute;
-  height: 69.84px;
-  width: 68.78px;
-  left: 699px;
-  top: 571px;
+  height: 73.84px;
+  width: auto;
+  left: 627px;
+  top: 553px;
 }
 
 .park_map .mark4 {
   position: absolute;
-  height: 89.3px;
-  width: 77.37px;
-  left: 580px;
-  top: 690px;
+  height: auto;
+  width: 135.37px;
+  left: 503px;
+  top: 657px;
 }
 
 .park_map .mark5 {
   position: absolute;
-  height: 305.4px;
-  width: 247.76px;
-  left: 684px;
-  top: 154px;
+  height: auto;
+  width: 165.76px;
+  left: 705px;
+  top: 178px;
+}
+
+.park_map .mark6 {
+  position: absolute;
+  width: 70.9px;
+  height: 276.3px;
+  left: 478px;
+  top: 186px;
 }
 
 .park_area>.park_map>.park_mark1 {
@@ -942,6 +946,12 @@ body.enBody .icon_list>.icon_btn12 {
   left: 570px;
 }
 
+.park_area>.park_map>.park_mark6 {
+  /* background-image: url(../img/floor/park_mark6.png); */
+  top: -130px;
+  left: 270px;
+}
+
 .park_area>.park_map>span.active {
   display: block;
   z-index: 1000;
@@ -959,4 +969,8 @@ body.enBody .icon_list>.icon_btn12 {
 
 svg * {
   fill: transparent;
+}
+
+svg {
+  pointer-events: none;
 }

@@ -237,6 +237,9 @@ function store() {
             document.querySelectorAll('.store .tab_list button')[idx].classList.add('active');
         });
     });
+
+    scrollDisapper('.foodArea .zh-TW-show', '.foodArea .arrow');
+    scrollDisapper('.foodArea .en-show', '.foodArea .arrow');
 }
 
 function floor() {
@@ -374,7 +377,7 @@ function floor() {
         });
     });
 
-    for (let id of [1, 2, 3, 4, 5]) {
+    for (let id of [1, 2, 3, 4, 5, 6]) {
         document.querySelectorAll(`.park_area>.park_map .mark${id} .cls-1`).forEach(el => {
             el.addEventListener('click', (event) => {
                 event.stopPropagation();
@@ -436,6 +439,7 @@ function checkBtnClass(lang) {
     document.querySelector('.long_bus_area .arrow').style.display = '';
     document.querySelector('.mrt_area .arrow').style.display = '';
     document.querySelector('.short_bus_area .arrow').style.display = '';
+    document.querySelector('.foodArea .arrow').style.display = '';
 
     if (lang === 'zh-TW') {
         document.querySelector('body').classList.remove('enBody');
