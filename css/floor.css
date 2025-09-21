@@ -917,27 +917,27 @@ body.enBody .icon_list>.icon_btn12 {
 }
 
 .park_area>.park_map>.park_mark1 {
-  /* background-image: url(../img/floor/park_mark1.png); */
-  top: 180px;
-  left: 355px;
+  background-image: url(../img/floor/park_mark1.png);
+  top: 195px;
+  left: 337px;
 }
 
 .park_area>.park_map>.park_mark2 {
   background-image: url(../img/floor/park_mark2.png);
-  top: -160px;
+  top: -135px;
   left: 490px;
 }
 
 .park_area>.park_map>.park_mark3 {
-  /* background-image: url(../img/floor/park_mark3.png); */
-  top: 215px;
-  left: 515px;
+  background-image: url(../img/floor/park_mark3.png);
+  top: 190px;
+  left: 495px;
 }
 
 .park_area>.park_map>.park_mark4 {
-  /* background-image: url(../img/floor/park_mark4.png); */
-  top: 360px;
-  left: 415px;
+  background-image: url(../img/floor/park_mark4.png);
+  top: 340px;
+  left: 400px;
 }
 
 .park_area>.park_map>.park_mark5 {
@@ -947,7 +947,7 @@ body.enBody .icon_list>.icon_btn12 {
 }
 
 .park_area>.park_map>.park_mark6 {
-  /* background-image: url(../img/floor/park_mark6.png); */
+  background-image: url(../img/floor/park_mark6.png);
   top: -130px;
   left: 270px;
 }
