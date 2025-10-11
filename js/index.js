@@ -318,12 +318,12 @@ function floor() {
                 item.classList.remove('active');
             });
 
-            // 2f
+            // 1f version
             if ([0, 1, 4, 14, 13].includes(idx)) { // 3f
                 pcSwiperPage.slideTo(0);
-            } else if ([3, 5, 6, 12].includes(idx)) { // 2f
+            } else if ([3, 6, 12].includes(idx)) { // 2f
                 pcSwiperPage.slideTo(1);
-            } else if ([2].includes(idx)) { // 1f
+            } else if ([2, 5].includes(idx)) { // 1f
                 pcSwiperPage.slideTo(2);
             } else if ([7, 8, 9, 10, 11].includes(idx)) { // b1
                 pcSwiperPage.slideTo(3);

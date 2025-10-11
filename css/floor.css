@@ -812,7 +812,7 @@ body.enBody .icon_list>.icon_btn14 {
   top: 175px;
 }
 
-.twof_map .type6 {
+/* .twof_map .type6 {
   left: 375px;
   top: 235px;
 }
@@ -823,7 +823,7 @@ body.enBody .icon_list>.icon_btn14 {
   height: 41px;
   left: 405px;
   top: 320px;
-}
+} */
 
 .twof_map .type7 {
   left: 680px;
@@ -880,7 +880,7 @@ body.enBody .icon_list>.icon_btn14 {
   top: 275px;
 }
 
-/* .onef_map .type6 {
+.onef_map .type6 {
   left: 430px;
   top: 375px;
 }
@@ -891,7 +891,7 @@ body.enBody .icon_list>.icon_btn14 {
   height: 41px;
   left: 460px;
   top: 460px;
-} */
+}
 
 .onef_map .type7 {
   left: 335px;
