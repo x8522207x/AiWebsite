@@ -279,7 +279,7 @@ function floor() {
         pcSwiperPage.slideTo(0);
         document.querySelector(`.page_p1`).classList.add('active');
 
-        for (let i = 0; i < 4; i++) {
+        for (let i = 0; i < 5; i++) {
             addPageClick(i, pcSwiperPage);
         }
     };
@@ -318,13 +318,14 @@ function floor() {
                 item.classList.remove('active');
             });
 
-            if ([0, 1, 4, 10, 11].includes(idx)) {
+            // 2f
+            if ([0, 1, 4, 14, 13].includes(idx)) { // 3f
                 pcSwiperPage.slideTo(0);
-            } else if ([3, 7].includes(idx)) {
+            } else if ([3, 5, 6, 12].includes(idx)) { // 2f
                 pcSwiperPage.slideTo(1);
-            } else if ([2, 9].includes(idx)) {
+            } else if ([2].includes(idx)) { // 1f
                 pcSwiperPage.slideTo(2);
-            } else if ([5, 6, 8].includes(idx)) {
+            } else if ([7, 8, 9, 10, 11].includes(idx)) { // b1
                 pcSwiperPage.slideTo(3);
             }
 
@@ -336,7 +337,7 @@ function floor() {
 
     const markObj = {
         threef: [1],
-        twof: [1, 2, 3, 4, 5, 6, 7],
+        twof: [1, 2, 3, 4, 5, 6, 7, 8],
         onef: [1, 2, 3, 4],
         b1: [1, 2, 3, 4],
     };

@@ -285,22 +285,18 @@ body.enBody .video_btn3 {
 
 .video_btn1 {
   background-image: url(../img/media/screenshot1.png);
-  left: 301px;
+  left: 391px;
   top: 1242px;
 }
 
 body.enBody .video_btn2 {
   background-image: url(../img/media/screenshot1.png);
-}
-
-.video_btn2 {
-  background-image: url(../img/media/screenshot2.png);
   left: 481px;
   top: 1242px;
 }
 
 .video_btn3 {
   background-image: url(../img/media/screenshot3.png);
-  left: 661px;
+  left: 571px;
   top: 1242px;
 }

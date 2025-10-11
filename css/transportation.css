@@ -36,8 +36,8 @@ body.enBody .transportation .map {
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 681px;
-  height: 446px;
+  width: 978px;
+  height: 640px;
   margin-top: 29px;
 }
 
@@ -169,12 +169,8 @@ body.enBody .content_body {
   flex-direction: column;
 }
 
-body.enBody .long_bus_area .table_container {
-  max-height: 878px;
-}
-
 .long_bus_area .table_container {
-  max-height: 950px;
+  max-height: 700px;
   overflow-y: scroll;
 }
 
@@ -249,7 +245,7 @@ body.enBody .long_bus_area .desc {
 
 body.enBody .mrt_area .table_container {
   width: 959px;
-  max-height: 982px;
+  max-height: 755px;
   border-collapse: collapse;
   overflow-y: scroll;
 }
@@ -382,7 +378,7 @@ body.enBody .mrt_area .table-metro tbody tr td:first-of-type {
 }
 
 body.enBody .short_bus_area .table_container {
-  max-height: 991px;
+  max-height: 775px;
   overflow-y: scroll;
 }
 
@@ -496,19 +492,19 @@ body.enBody .short_bus_area table tbody td.name_6 {
 
 body.enBody .drive_area .sourthBlock {
   background-image: url(../img/transportation/sourth_en.png);
-  height: 477px;
+  height: 334px;
 }
 
 .drive_area .sourthBlock {
   background-image: url(../img/transportation/sourth.png);
   width: 1020px;
   height: 252px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 body.enBody .drive_area .northBlock {
   background-image: url(../img/transportation/north_en.png);
-  height: 437px;
+  height: 343px;
 }
 
 .drive_area .northBlock {
