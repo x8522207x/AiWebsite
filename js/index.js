@@ -238,8 +238,7 @@ function store() {
         });
     });
 
-    scrollDisapper('.foodArea .zh-TW-show', '.foodArea .arrow');
-    scrollDisapper('.foodArea .en-show', '.foodArea .arrow');
+    scrollDisapper('.foodArea .desc', '.foodArea .arrow');
 }
 
 function floor() {
@@ -276,8 +275,9 @@ function floor() {
             }
         });
 
-        pcSwiperPage.slideTo(0);
-        document.querySelector(`.page_p1`).classList.add('active');
+        // 1f version
+        pcSwiperPage.slideTo(2);
+        document.querySelector(`.page_p3`).classList.add('active');
 
         for (let i = 0; i < 5; i++) {
             addPageClick(i, pcSwiperPage);
@@ -319,14 +319,56 @@ function floor() {
             });
 
             // 1f version
-            if ([0, 1, 4, 14, 13].includes(idx)) { // 3f
-                pcSwiperPage.slideTo(0);
-            } else if ([3, 6, 12].includes(idx)) { // 2f
-                pcSwiperPage.slideTo(1);
-            } else if ([2, 5].includes(idx)) { // 1f
-                pcSwiperPage.slideTo(2);
-            } else if ([7, 8, 9, 10, 11].includes(idx)) { // b1
-                pcSwiperPage.slideTo(3);
+            switch (pcSwiperPage.realIndex) {
+                case 0:
+                    if ([1, 4, 5, 13, 14].includes(idx)) { // 3f
+                        pcSwiperPage.slideTo(0);
+                    } else if ([3, 6, 12].includes(idx)) { // 2f
+                        pcSwiperPage.slideTo(1);
+                    } else if ([0, 2].includes(idx)) { // 1f
+                        pcSwiperPage.slideTo(2);
+                    } else if ([7, 8, 9, 10, 11].includes(idx)) { // b1
+                        pcSwiperPage.slideTo(3);
+                    }
+                    break;
+                case 1:
+                    if ([1, 3, 4, 5, 6, 12, 13, 14].includes(idx)) { // 2f
+                        pcSwiperPage.slideTo(1);
+                    } else if ([0, 2].includes(idx)) { // 1f
+                        pcSwiperPage.slideTo(2);
+                    } else if ([7, 8, 9, 10, 11].includes(idx)) { // b1
+                        pcSwiperPage.slideTo(3);
+                    }
+                    break;
+                case 2:
+                    if ([4].includes(idx)) { // 2f
+                        pcSwiperPage.slideTo(1);
+                    } else if ([0, 1, 2, 3, 5, 6, 12, 13, 14].includes(idx)) { // 1f
+                        pcSwiperPage.slideTo(2);
+                    } else if ([7, 8, 9, 10, 11].includes(idx)) { // b1
+                        pcSwiperPage.slideTo(3);
+                    }
+                    break;
+                case 3:
+                    if ([4].includes(idx)) { // 2f
+                        pcSwiperPage.slideTo(1);
+                    } else if ([0, 2, 3, 6, 12].includes(idx)) { // 1f
+                        pcSwiperPage.slideTo(2);
+                    } else if ([1, 5, 7, 8, 9, 10, 11, 13, 14].includes(idx)) { // b1
+                        pcSwiperPage.slideTo(3);
+                    }
+                    break;
+                case 4:
+                    if ([4].includes(idx)) { // 2f
+                        pcSwiperPage.slideTo(1);
+                    } else if ([0, 2, 3, 6, 12].includes(idx)) { // 1f
+                        pcSwiperPage.slideTo(2);
+                    } else if ([1, 5, 8, 9, 10, 11].includes(idx)) { // b1
+                        pcSwiperPage.slideTo(3);
+                    } else if ([7, 13, 14].includes(idx)) { // 3f
+                        pcSwiperPage.slideTo(4);
+                    }
+                    break;
             }
 
             document.querySelectorAll(`.type${idx + 1}`).forEach(item => {
@@ -441,6 +483,10 @@ function checkBtnClass(lang) {
     document.querySelector('.mrt_area .arrow').style.display = '';
     document.querySelector('.short_bus_area .arrow').style.display = '';
     document.querySelector('.foodArea .arrow').style.display = '';
+    document.querySelector('.long_bus_area .table_container').scrollTop = 0;
+    document.querySelector('.mrt_area .table_container').scrollTop = 0;
+    document.querySelector('.short_bus_area .table_container').scrollTop = 0;
+    document.querySelector('.foodArea .desc').scrollTop = 0;
 
     if (lang === 'zh-TW') {
         document.querySelector('body').classList.remove('enBody');
