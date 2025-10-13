@@ -529,8 +529,12 @@ body.enBody .arrow {
   animation: bounce 0.8s infinite alternate;
 }
 
-.long_bus_area .arrow {
+body.enBody .long_bus_area .arrow {
   margin-bottom: 100px;
+}
+
+.long_bus_area .arrow {
+  margin-bottom: 60px;
   display: block;
   position: absolute;
 }

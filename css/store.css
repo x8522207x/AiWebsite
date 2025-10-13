@@ -111,6 +111,7 @@ body.enBody .parkTab.active {
 .foodArea .desc {
   position: relative;
   width: 940px;
+  max-height: 395px;
   height: 395px;
   font-size: 48px;
   line-height: 82px;
