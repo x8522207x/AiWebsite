@@ -1,3 +1,4 @@
+let pcSwiperPage;
 document.addEventListener("DOMContentLoaded", () => {
     let lang = localStorage.getItem('lang');
     let page = localStorage.getItem('page');
@@ -243,7 +244,6 @@ function store() {
 
 function floor() {
     // floor
-    let pcSwiperPage;
     const pcSwiper = () => {
         pcSwiperPage = new Swiper('.swiper-container', {
             direction: 'vertical',
@@ -620,6 +620,7 @@ function modifyClass(page) {
         document.querySelector('.park_area').style.display = 'none';
         document.querySelector('.floor_area').style.display = 'block';
         document.querySelector('.nav-side').style.display = 'block';
+        pcSwiperPage?.slideTo(2);
 
         document.querySelectorAll('.icon_list>div').forEach(el => {
             el.classList.remove('active');

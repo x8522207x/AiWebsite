@@ -500,7 +500,6 @@ body.enBody .icon_list>.icon_btn1 {
 }
 
 body.enBody .icon_list>.icon_btn2 {
-  left: 177px;
   top: 340px;
 }
 
@@ -516,7 +515,6 @@ body.enBody .icon_list>.icon_btn2 {
 }
 
 body.enBody .icon_list>.icon_btn3 {
-  left: 337px;
   top: 340px;
 }
 
@@ -532,7 +530,6 @@ body.enBody .icon_list>.icon_btn3 {
 }
 
 body.enBody .icon_list>.icon_btn4 {
-  left: 461px;
   top: 340px;
 }
 
@@ -548,7 +545,6 @@ body.enBody .icon_list>.icon_btn4 {
 }
 
 body.enBody .icon_list>.icon_btn5 {
-  left: 588px;
   top: 340px;
 }
 
@@ -565,7 +561,7 @@ body.enBody .icon_list>.icon_btn5 {
 
 body.enBody .icon_list>.icon_btn6 {
   width: 130px;
-  left: 713px;
+  left: 677px;
   top: 340px;
 }
 
@@ -581,7 +577,7 @@ body.enBody .icon_list>.icon_btn6 {
 }
 
 body.enBody .icon_list>.icon_btn7 {
-  left: 830px;
+  left: 811px;
   top: 340px;
   width: 110px;
 }
@@ -598,7 +594,6 @@ body.enBody .icon_list>.icon_btn7 {
 }
 
 body.enBody .icon_list>.icon_btn8 {
-  left: 962px;
   top: 340px;
 }
 
@@ -631,7 +626,7 @@ body.enBody .icon_list>.icon_btn9 {
 
 body.enBody .icon_list>.icon_btn10 {
   width: 150px;
-  left: 202px;
+  left: 200px;
   top: 497px;
 }
 
@@ -679,7 +674,7 @@ body.enBody .icon_list>.icon_btn12 {
 }
 
 body.enBody .icon_list>.icon_btn13 {
-  left: 680px;
+  left: 669px;
   top: 497px;
   width: 125px;
 }
@@ -695,24 +690,7 @@ body.enBody .icon_list>.icon_btn13 {
   height: 80px;
 }
 
-body.enBody .icon_list>.icon_btn15 {
-  left: 830px;
-  top: 497px;
-}
-
-.icon_list>.icon_btn15 {
-  left: 944px;
-  top: 491px;
-}
-
-.icon_list>.icon_btn15>.icon {
-  background-image: url(../img/floor/icon_btn15.png);
-  width: 90px;
-  height: 80px;
-}
-
 body.enBody .icon_list>.icon_btn14 {
-  left: 958px;
   top: 497px;
 }
 
@@ -723,6 +701,21 @@ body.enBody .icon_list>.icon_btn14 {
 
 .icon_list>.icon_btn14>.icon {
   background-image: url(../img/floor/icon_btn14.png);
+  width: 90px;
+  height: 80px;
+}
+
+body.enBody .icon_list>.icon_btn15 {
+  top: 497px;
+}
+
+.icon_list>.icon_btn15 {
+  left: 944px;
+  top: 491px;
+}
+
+.icon_list>.icon_btn15>.icon {
+  background-image: url(../img/floor/icon_btn15.png);
   width: 90px;
   height: 80px;
 }
