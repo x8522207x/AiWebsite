@@ -112,25 +112,25 @@ body.enBody .zone_type_list .floor_btn {
 .swiper-container {
   touch-action: auto;
   width: 100%;
-  height: 1000px !important;
+  height: 1125px !important;
   max-width: 100vw;
   overflow: hidden;
   display: flex;
   box-sizing: border-box;
-  top: 805px;
+  top: 680px;
   position: absolute;
 }
 
 .swiper-slide {
   width: 1080px !important;
-  height: 707px !important;
+  height: 754px !important;
 }
 
 .swiper-slide>div {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 707px;
+  height: 754px;
   width: 1080px;
 }
 

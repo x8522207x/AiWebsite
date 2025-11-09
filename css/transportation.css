@@ -170,7 +170,7 @@ body.enBody .content_body {
 }
 
 .long_bus_area .table_container {
-  max-height: 700px;
+  max-height: 765px;
   overflow-y: scroll;
 }
 
@@ -222,19 +222,6 @@ table {
   font-weight: bold;
   border: 1px solid #03182C;
   background-color: #F3F9F8;
-}
-
-body.enBody .long_bus_area .desc {
-  margin-top: 18px;
-  font-size: 24px;
-  width: 824px;
-}
-
-.long_bus_area .desc {
-  margin-top: 30px;
-  font-weight: bold;
-  font-size: 22px;
-  text-align: center;
 }
 
 .mrt_area {
@@ -529,12 +516,8 @@ body.enBody .arrow {
   animation: bounce 0.8s infinite alternate;
 }
 
-body.enBody .long_bus_area .arrow {
-  margin-bottom: 100px;
-}
-
 .long_bus_area .arrow {
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   display: block;
   position: absolute;
 }
