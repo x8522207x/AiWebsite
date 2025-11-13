@@ -866,14 +866,27 @@ body.enBody .icon_list>.icon_btn15 {
   top: 460px;
 } */
 
+body.enBody .onef_map .type2 {
+  left: 250px;
+}
+
 .onef_map .type2 {
   left: 255px;
   top: 255px;
 }
 
+body.enBody .onef_map .type3 {
+  left: 280px;
+}
+
 .onef_map .type3 {
   left: 285px;
   top: 255px;
+}
+
+body.enBody .onef_map .type4 {
+  left: 310px;
+  top: 290px;
 }
 
 .onef_map .type4 {
@@ -884,6 +897,11 @@ body.enBody .icon_list>.icon_btn15 {
 .onef_map .type6 {
   left: 520px;
   top: 355px;
+}
+
+body.enBody .onef_map .type7 {
+  left: 335px;
+  top: 290px;
 }
 
 .onef_map .type7 {
